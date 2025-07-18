@@ -151,103 +151,117 @@
         <section id="projects" class="section">
             <div class="container">
                 <h2 class="section-title">RECENT PROJECTS</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="project-overlay">
-                                <span class="project-type">Web Testing</span>
+                <div class="projects-container">
+                    <div class="projects-grid" id="projectsGrid">
+                        <div class="projects-row">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <div class="project-overlay">
+                                        <span class="project-type">Web Testing</span>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3>E-commerce Platform Testing</h3>
+                                    <p>大規模ECサイトの自動テスト実装とCI/CD統合</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Playwright</span>
+                                        <span class="tech-tag">TypeScript</span>
+                                        <span class="tech-tag">Docker</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <div class="project-overlay">
+                                        <span class="project-type">Mobile Testing</span>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3>Mobile App Quality Assurance</h3>
+                                    <p>クロスプラットフォームモバイルアプリのテスト戦略</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Appium</span>
+                                        <span class="tech-tag">Jest</span>
+                                        <span class="tech-tag">AWS Device Farm</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <div class="project-overlay">
+                                        <span class="project-type">API Testing</span>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3>API Testing Framework</h3>
+                                    <p>RESTful APIの包括的テストフレームワーク開発</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Postman</span>
+                                        <span class="tech-tag">Newman</span>
+                                        <span class="tech-tag">Python</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="project-content">
-                            <h3>E-commerce Platform Testing</h3>
-                            <p>大規模ECサイトの自動テスト実装とCI/CD統合</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Playwright</span>
-                                <span class="tech-tag">TypeScript</span>
-                                <span class="tech-tag">Docker</span>
+                        <div class="projects-row">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <div class="project-overlay">
+                                        <span class="project-type">Load Testing</span>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3>High-Traffic System Testing</h3>
+                                    <p>大規模トラフィックシステムの負荷テストとボトルネック分析</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">JMeter</span>
+                                        <span class="tech-tag">Artillery</span>
+                                        <span class="tech-tag">Grafana</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <div class="project-overlay">
+                                        <span class="project-type">Security Testing</span>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3>Web Application Security Testing</h3>
+                                    <p>Webアプリケーションの脆弱性診断とペネトレーションテスト</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">OWASP ZAP</span>
+                                        <span class="tech-tag">Burp Suite</span>
+                                        <span class="tech-tag">Nessus</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <div class="project-overlay">
+                                        <span class="project-type">CI/CD Testing</span>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3>DevOps Test Pipeline</h3>
+                                    <p>継続的インテグレーションでのテスト自動化パイプライン構築</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Jenkins</span>
+                                        <span class="tech-tag">GitHub Actions</span>
+                                        <span class="tech-tag">SonarQube</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="project-overlay">
-                                <span class="project-type">Mobile Testing</span>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>Mobile App Quality Assurance</h3>
-                            <p>クロスプラットフォームモバイルアプリのテスト戦略</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Appium</span>
-                                <span class="tech-tag">Jest</span>
-                                <span class="tech-tag">AWS Device Farm</span>
-                            </div>
-                        </div>
+                </div>
+                <div class="projects-navigation">
+                    <button class="projects-nav-btn" id="prevBtn">PREV</button>
+                    <div class="projects-indicators">
+                        <div class="projects-indicator active" data-slide="0"></div>
+                        <div class="projects-indicator" data-slide="1"></div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="project-overlay">
-                                <span class="project-type">API Testing</span>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>API Testing Framework</h3>
-                            <p>RESTful APIの包括的テストフレームワーク開発</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Postman</span>
-                                <span class="tech-tag">Newman</span>
-                                <span class="tech-tag">Python</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="project-overlay">
-                                <span class="project-type">Load Testing</span>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>High-Traffic System Testing</h3>
-                            <p>大規模トラフィックシステムの負荷テストとボトルネック分析</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">JMeter</span>
-                                <span class="tech-tag">Artillery</span>
-                                <span class="tech-tag">Grafana</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="project-overlay">
-                                <span class="project-type">Security Testing</span>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>Web Application Security Testing</h3>
-                            <p>Webアプリケーションの脆弱性診断とペネトレーションテスト</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">OWASP ZAP</span>
-                                <span class="tech-tag">Burp Suite</span>
-                                <span class="tech-tag">Nessus</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="project-overlay">
-                                <span class="project-type">CI/CD Testing</span>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>DevOps Test Pipeline</h3>
-                            <p>継続的インテグレーションでのテスト自動化パイプライン構築</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Jenkins</span>
-                                <span class="tech-tag">GitHub Actions</span>
-                                <span class="tech-tag">SonarQube</span>
-                            </div>
-                        </div>
-                    </div>
+                    <button class="projects-nav-btn" id="nextBtn">NEXT</button>
                 </div>
             </div>
         </section>

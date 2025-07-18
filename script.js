@@ -276,6 +276,131 @@ function navbarScrollEffect() {
     });
 }
 
+// Projects slider functionality
+function initProjectsSlider() {
+    const projectsGrid = document.getElementById('projectsGrid');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const indicators = document.querySelectorAll('.projects-indicator');
+    let currentSlide = 0;
+    const totalSlides = 2;
+    
+    function updateSlider() {
+        const translateX = -currentSlide * 50;
+        projectsGrid.style.transform = `translateX(${translateX}%)`;
+        
+        // Update indicators
+        indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('active', index === currentSlide);
+        });
+        
+        // Update buttons
+        prevBtn.disabled = currentSlide === 0;
+        nextBtn.disabled = currentSlide === totalSlides - 1;
+    }
+    
+    function nextSlide() {
+        if (currentSlide < totalSlides - 1) {
+            currentSlide++;
+            updateSlider();
+        }
+    }
+    
+    function prevSlide() {
+        if (currentSlide > 0) {
+            currentSlide--;
+            updateSlider();
+        }
+    }
+    
+    // Button event listeners
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+    
+    // Indicator event listeners
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            currentSlide = index;
+            updateSlider();
+        });
+    });
+    
+    // Touch/swipe support
+    let startX = 0;
+    let endX = 0;
+    
+    projectsGrid.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+    });
+    
+    projectsGrid.addEventListener('touchend', (e) => {
+        endX = e.changedTouches[0].clientX;
+        handleSwipe();
+    });
+    
+    // Mouse drag support
+    let isDragging = false;
+    let dragStartX = 0;
+    
+    projectsGrid.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        dragStartX = e.clientX;
+        projectsGrid.style.cursor = 'grabbing';
+    });
+    
+    projectsGrid.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+    });
+    
+    projectsGrid.addEventListener('mouseup', (e) => {
+        if (!isDragging) return;
+        isDragging = false;
+        projectsGrid.style.cursor = 'grab';
+        
+        const dragEndX = e.clientX;
+        const diffX = dragStartX - dragEndX;
+        
+        if (Math.abs(diffX) > 50) {
+            if (diffX > 0) {
+                nextSlide();
+            } else {
+                prevSlide();
+            }
+        }
+    });
+    
+    projectsGrid.addEventListener('mouseleave', () => {
+        isDragging = false;
+        projectsGrid.style.cursor = 'grab';
+    });
+    
+    function handleSwipe() {
+        const diffX = startX - endX;
+        
+        if (Math.abs(diffX) > 50) {
+            if (diffX > 0) {
+                nextSlide();
+            } else {
+                prevSlide();
+            }
+        }
+    }
+    
+    // Keyboard support
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') {
+            prevSlide();
+        } else if (e.key === 'ArrowRight') {
+            nextSlide();
+        }
+    });
+    
+    // Initialize
+    updateSlider();
+    projectsGrid.style.cursor = 'grab';
+}
+
 // Initialize all effects
 document.addEventListener('DOMContentLoaded', () => {
     createGlitchEffect();
@@ -287,6 +412,7 @@ document.addEventListener('DOMContentLoaded', () => {
     createMatrixRain();
     addHoverEffects();
     navbarScrollEffect();
+    initProjectsSlider();
     
     // Delay typing effect to let page load
     setTimeout(typeCode, 2000);

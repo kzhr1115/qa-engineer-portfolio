@@ -486,33 +486,39 @@ function initScrollStoryNew() {
     scrollSteps[0].classList.add('visible');
     triggerStepAnimation(scrollSteps[0]);
     
+    let scrollCheckTimeout;
+    
     function checkScrollSteps() {
-        // Update current step index based on scroll position
-        scrollSteps.forEach((step, index) => {
-            const rect = step.getBoundingClientRect();
-            const isInCenter = rect.top < window.innerHeight * 0.6 && rect.bottom > window.innerHeight * 0.4;
+        // Debounce scroll checks to reduce performance impact
+        clearTimeout(scrollCheckTimeout);
+        scrollCheckTimeout = setTimeout(() => {
+            // Update current step index based on scroll position
+            scrollSteps.forEach((step, index) => {
+                const rect = step.getBoundingClientRect();
+                const isInCenter = rect.top < window.innerHeight * 0.6 && rect.bottom > window.innerHeight * 0.4;
+                
+                if (isInCenter) {
+                    currentStepIndex = index;
+                }
+            });
             
-            if (isInCenter) {
-                currentStepIndex = index;
-            }
-        });
-        
-        // Check visibility for all steps
-        scrollSteps.forEach(step => {
-            const rect = step.getBoundingClientRect();
-            const isVisible = rect.top < window.innerHeight * 0.8 && rect.bottom > window.innerHeight * 0.2;
-            
-            if (isVisible) {
-                step.classList.add('visible');
-                triggerStepAnimation(step);
-            }
-        });
+            // Check visibility for all steps
+            scrollSteps.forEach(step => {
+                const rect = step.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight * 0.8 && rect.bottom > window.innerHeight * 0.2;
+                
+                if (isVisible) {
+                    step.classList.add('visible');
+                    triggerStepAnimation(step);
+                }
+            });
+        }, 50);
     }
     
-    // Advanced scroll control with scroll hijacking
-    let isScrolling = false;
-    let currentStepIndex = 0;
+    // Smooth scroll control with reduced interference
     let scrollPaused = false;
+    let lastScrollTime = 0;
+    let currentStepIndex = 0;
     
     function handleSmoothScroll(e) {
         const aboutSection = document.querySelector('.scroll-story-section');
@@ -522,53 +528,39 @@ function initScrollStoryNew() {
         const inSection = rect.top < window.innerHeight && rect.bottom > 0;
         
         if (inSection) {
-            e.preventDefault();
+            const now = Date.now();
             
-            if (scrollPaused) return;
-            
-            const scrollDirection = e.deltaY > 0 ? 1 : -1;
-            const steps = document.querySelectorAll('.scroll-step');
-            
-            // Determine which step should be active
-            let targetStep = currentStepIndex;
-            if (scrollDirection > 0 && currentStepIndex < steps.length - 1) {
-                targetStep = currentStepIndex + 1;
-            } else if (scrollDirection < 0 && currentStepIndex > 0) {
-                targetStep = currentStepIndex - 1;
+            // Prevent rapid scrolling
+            if (now - lastScrollTime < 100) {
+                e.preventDefault();
+                return;
             }
             
-            if (targetStep !== currentStepIndex) {
-                scrollPaused = true;
-                currentStepIndex = targetStep;
+            // Only slow down scroll, don't completely hijack it
+            if (Math.abs(e.deltaY) > 50) {
+                e.preventDefault();
                 
-                // Hide scrollbar during animation
-                document.body.style.overflow = 'hidden';
+                const scrollAmount = e.deltaY * 0.3; // Much slower scroll
+                const newScrollY = window.scrollY + scrollAmount;
                 
-                // Scroll to the target step
-                const targetElement = steps[targetStep];
-                if (targetElement) {
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'center'
-                    });
-                    
-                    // Trigger animations for the target step
-                    setTimeout(() => {
-                        triggerStepAnimation(targetElement);
-                    }, 200);
-                }
+                window.scrollTo({
+                    top: newScrollY,
+                    behavior: 'smooth'
+                });
                 
-                // Resume scrolling and show scrollbar after animation
-                setTimeout(() => {
-                    scrollPaused = false;
-                    document.body.style.overflow = 'auto';
-                }, 1500);
+                lastScrollTime = now;
             }
         }
     }
     
     function triggerStepAnimation(step) {
+        // Prevent duplicate animations
+        if (step.classList.contains('animated')) {
+            return;
+        }
+        
         step.classList.add('visible');
+        step.classList.add('animated');
         
         // Trigger specific animations for each step
         if (step.id === 'step-experience' || step.id === 'step-projects' || step.id === 'step-bugs') {
@@ -577,16 +569,16 @@ function initScrollStoryNew() {
             const statLabel = step.querySelector('.stat-label-huge');
             const statSubtitle = step.querySelector('.stat-subtitle');
             
-            if (statNumber) {
+            if (statNumber && !statNumber.classList.contains('animate')) {
                 statNumber.classList.add('animate');
             }
-            if (statPlus) {
+            if (statPlus && !statPlus.classList.contains('animate')) {
                 statPlus.classList.add('animate');
             }
-            if (statLabel) {
+            if (statLabel && !statLabel.classList.contains('animate')) {
                 statLabel.classList.add('animate');
             }
-            if (statSubtitle) {
+            if (statSubtitle && !statSubtitle.classList.contains('animate')) {
                 statSubtitle.classList.add('animate');
             }
         }
@@ -595,17 +587,17 @@ function initScrollStoryNew() {
             const aboutTextMain = step.querySelector('.about-text-main');
             const aboutTextDetail = step.querySelector('.about-text-detail');
             
-            if (aboutTextMain) {
+            if (aboutTextMain && !aboutTextMain.classList.contains('animate')) {
                 aboutTextMain.classList.add('animate');
             }
-            if (aboutTextDetail) {
+            if (aboutTextDetail && !aboutTextDetail.classList.contains('animate')) {
                 aboutTextDetail.classList.add('animate');
             }
         }
         
         if (step.id === 'step-code') {
             const codeBlock = step.querySelector('.code-block-animated');
-            if (codeBlock) {
+            if (codeBlock && codeBlock.style.animationPlayState !== 'running') {
                 codeBlock.style.animationPlayState = 'running';
                 
                 const codeLines = step.querySelectorAll('.code-line');

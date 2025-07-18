@@ -1,0 +1,31 @@
+{
+  "name": "playwright-mcp",
+  "version": "1.0.0",
+  "description": "Web scraper using Playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "scrape:basic": "npx ts-node scraper-example.ts basic",
+    "scrape:instagram": "npx ts-node instagram-scraper.ts basic",
+    "scrape:instagram-login": "npx ts-node instagram-scraper.ts login",
+    "scrape:manual": "npx ts-node manual-scraper.ts instagram",
+    "scrape:manual-generic": "npx ts-node manual-scraper.ts generic",
+    "scrape:interactive": "npx ts-node manual-scraper.ts interactive"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.40.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  },
+  "keywords": [
+    "playwright",
+    "scraping",
+    "automation",
+    "web"
+  ],
+  "author": "",
+  "license": "MIT"
+}

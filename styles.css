@@ -433,9 +433,29 @@ body {
 
 /* Projects Section */
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    display: flex;
     gap: 40px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+}
+
+.projects-grid::-webkit-scrollbar {
+    height: 8px;
+}
+
+.projects-grid::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.projects-grid::-webkit-scrollbar-thumb {
+    background: rgba(0, 255, 255, 0.5);
+    border-radius: 4px;
+}
+
+.projects-grid::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 255, 255, 0.8);
 }
 
 .project-card {
@@ -445,6 +465,8 @@ body {
     overflow: hidden;
     transition: all 0.3s ease;
     position: relative;
+    flex: 0 0 350px;
+    min-width: 350px;
 }
 
 .project-card:hover {
@@ -685,7 +707,14 @@ body {
     }
     
     .projects-grid {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project-card {
+        flex: none;
+        width: 100%;
+        max-width: 400px;
     }
     
     .contact-content {

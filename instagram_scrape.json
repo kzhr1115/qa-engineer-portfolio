@@ -1,0 +1,4190 @@
+{
+  "totalPages": 5,
+  "totalUrls": 5,
+  "startUrl": "https://www.instagram.com/",
+  "scrapedAt": "2025-07-17T18:25:03.885Z",
+  "config": {
+    "maxDepth": 1,
+    "maxPages": 5,
+    "selectors": {
+      "links": "a[href]",
+      "texts": "h1, h2, span, div[class*=\"text\"], p",
+      "images": "img",
+      "custom": {
+        "posts": "article",
+        "usernames": "a[href*=\"/\"]",
+        "stories": "[data-testid=\"story\"]",
+        "navigation": "nav a",
+        "buttons": "button",
+        "modalContent": "[role=\"dialog\"]"
+      }
+    },
+    "outputFile": "instagram_scrape.json",
+    "startUrl": "https://www.instagram.com/"
+  },
+  "data": [
+    {
+      "url": "https://www.instagram.com/",
+      "title": "Instagram",
+      "elements": {
+        "links": [
+          {
+            "text": "パスワードを忘れた場合",
+            "href": "/accounts/password/reset/",
+            "title": null
+          },
+          {
+            "text": "登録する",
+            "href": "/accounts/emailsignup/",
+            "title": null
+          },
+          {
+            "text": "Meta",
+            "href": "https://about.meta.com/",
+            "title": null
+          },
+          {
+            "text": "基本データ",
+            "href": "https://about.instagram.com/",
+            "title": null
+          },
+          {
+            "text": "ブログ",
+            "href": "https://about.instagram.com/blog/",
+            "title": null
+          },
+          {
+            "text": "求人",
+            "href": "https://about.instagram.com/about-us/careers",
+            "title": null
+          },
+          {
+            "text": "ヘルプ",
+            "href": "https://help.instagram.com/",
+            "title": null
+          },
+          {
+            "text": "API",
+            "href": "https://developers.facebook.com/docs/instagram",
+            "title": null
+          },
+          {
+            "text": "プライバシー",
+            "href": "/legal/privacy/",
+            "title": null
+          },
+          {
+            "text": "利用規約",
+            "href": "/legal/terms/",
+            "title": null
+          },
+          {
+            "text": "所在地",
+            "href": "/explore/locations/",
+            "title": null
+          },
+          {
+            "text": "Instagram Lite",
+            "href": "/web/lite/",
+            "title": null
+          },
+          {
+            "text": "Threads",
+            "href": "https://www.threads.com/",
+            "title": null
+          },
+          {
+            "text": "連絡先のアップロードとユーザー以外",
+            "href": "https://www.facebook.com/help/instagram/261704639352628",
+            "title": null
+          },
+          {
+            "text": "Meta認証",
+            "href": "/accounts/meta_verified/?entrypoint=web_footer",
+            "title": null
+          },
+          {
+            "text": "利用規約",
+            "href": "https://help.instagram.com/581066165581870/?locale=ja_JP",
+            "title": null
+          },
+          {
+            "text": "プライバシーポリシー",
+            "href": "https://privacycenter.instagram.com/policy/",
+            "title": null
+          }
+        ],
+        "texts": [
+          {
+            "text": "電話番号、ユーザーネーム、またはメールアドレス",
+            "tagName": "span",
+            "className": "_aa4a"
+          },
+          {
+            "text": "パスワード",
+            "tagName": "span",
+            "className": "_aa4a"
+          },
+          {
+            "text": "Facebookでログイン",
+            "tagName": "span",
+            "className": "xvs91rp xwhw2v2 x2ltsn7"
+          },
+          {
+            "text": "アカウントを持っていない場合 登録する",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xvs91rp xo1l8bm x1roi4f4 x1tu3fi x3x7a5m x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "アカウントを持っていない場合 登録する",
+            "tagName": "p",
+            "className": "x5n08af x1f6kntn xcxhlts xjx09e3 x1fqp7bg xx6jrq6 x2b8uid"
+          },
+          {
+            "text": "登録する",
+            "tagName": "span",
+            "className": "x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs xt0psk2 x1i0vuye xvs91rp x1s688f x1iiplp5 x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "Meta",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "基本データ",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "ブログ",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "求人",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "ヘルプ",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "API",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "プライバシー",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "利用規約",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "所在地",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "Instagram Lite",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "Threads",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "連絡先のアップロードとユーザー以外",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "Meta認証",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "日本語下向きシェブロンアイコンAfrikaansالعربيةČeštinaDanskDeutschΕλληνικάEnglishEnglish (UK)Español (España)EspañolفارسیSuomiFrançaisעבריתBahasa IndonesiaItaliano日本語한국어Bahasa MelayuNorskNederlandsPolskiPortuguês (Brasil)Português (Portugal)РусскийSvenskaภาษาไทยFilipinoTürkçe中文(简体)中文(台灣)বাংলাગુજરાતીहिन्दीHrvatskiMagyarಕನ್ನಡമലയാളംमराठीनेपालीਪੰਜਾਬੀසිංහලSlovenčinaதமிழ்తెలుగుاردوTiếng Việt中文(香港)БългарскиFrançais (Canada)RomânăСрпскиУкраїнська",
+            "tagName": "span",
+            "className": "x1ypdohk x1rg5ohu x1n2onr6 x16dsc37"
+          },
+          {
+            "text": "日本語",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "下向きシェブロンアイコン",
+            "tagName": "span",
+            "className": null
+          },
+          {
+            "text": "© 2025 Instagram from Meta",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "次に進むことで、Instagramの利用規約および プライバシーポリシーに同意するものとします。",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x5n08af x1yc453h x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "利用規約",
+            "tagName": "span",
+            "className": "x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs xt0psk2 x1i0vuye x1fhwpqd x1s688f x5n08af x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "プライバシーポリシー",
+            "tagName": "span",
+            "className": "x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs xt0psk2 x1i0vuye x1fhwpqd x1s688f x5n08af x10wh9bi xpm28yp x8viiok x1o7cslx"
+          }
+        ],
+        "images": [
+          {
+            "src": "/images/instagram/xig/homepage/screenshots_v3/instagram-web-lox-image.png",
+            "alt": "",
+            "title": null,
+            "width": null,
+            "height": null
+          }
+        ],
+        "custom": []
+      },
+      "links": [
+        "https://www.instagram.com/accounts/password/reset/",
+        "https://www.instagram.com/accounts/emailsignup/",
+        "https://about.meta.com/",
+        "https://about.instagram.com/",
+        "https://about.instagram.com/blog/",
+        "https://about.instagram.com/about-us/careers",
+        "https://help.instagram.com/",
+        "https://developers.facebook.com/docs/instagram",
+        "https://www.instagram.com/legal/privacy/",
+        "https://www.instagram.com/legal/terms/",
+        "https://www.instagram.com/explore/locations/",
+        "https://www.instagram.com/web/lite/",
+        "https://www.threads.com/",
+        "https://www.facebook.com/help/instagram/261704639352628",
+        "https://www.instagram.com/accounts/meta_verified/?entrypoint=web_footer",
+        "https://help.instagram.com/581066165581870/?locale=ja_JP",
+        "https://privacycenter.instagram.com/policy/"
+      ],
+      "timestamp": "2025-07-17T18:24:45.314Z",
+      "depth": 0
+    },
+    {
+      "url": "https://www.instagram.com/accounts/password/reset/",
+      "title": "パスワードをリセット • Instagram",
+      "elements": {
+        "links": [
+          {
+            "text": "Instagram",
+            "href": "/",
+            "title": null
+          },
+          {
+            "text": "ログイン",
+            "href": "/accounts/login/?next=%2Faccounts%2Fpassword%2Freset%2F&source=desktop_nav",
+            "title": null
+          },
+          {
+            "text": "登録する",
+            "href": "/accounts/emailsignup/",
+            "title": null
+          },
+          {
+            "text": "パスワードをリセットできない場合",
+            "href": "/accounts/account_recovery/?source=web_account_recovery&username=&waterfall_id=dd4c449c-20f9-4631-9857-2d8e3dc9c3e3",
+            "title": null
+          },
+          {
+            "text": "新しいアカウントを作成",
+            "href": "/accounts/emailsignup/",
+            "title": null
+          },
+          {
+            "text": "ログインに戻る",
+            "href": "/accounts/login/?source=reset_password",
+            "title": null
+          },
+          {
+            "text": "Meta",
+            "href": "https://about.meta.com/",
+            "title": null
+          },
+          {
+            "text": "基本データ",
+            "href": "https://about.instagram.com/",
+            "title": null
+          },
+          {
+            "text": "ブログ",
+            "href": "https://about.instagram.com/blog/",
+            "title": null
+          },
+          {
+            "text": "求人",
+            "href": "https://about.instagram.com/about-us/careers",
+            "title": null
+          },
+          {
+            "text": "ヘルプ",
+            "href": "https://help.instagram.com/",
+            "title": null
+          },
+          {
+            "text": "API",
+            "href": "https://developers.facebook.com/docs/instagram",
+            "title": null
+          },
+          {
+            "text": "プライバシー",
+            "href": "/legal/privacy/",
+            "title": null
+          },
+          {
+            "text": "利用規約",
+            "href": "/legal/terms/",
+            "title": null
+          },
+          {
+            "text": "所在地",
+            "href": "/explore/locations/",
+            "title": null
+          },
+          {
+            "text": "Instagram Lite",
+            "href": "/web/lite/",
+            "title": null
+          },
+          {
+            "text": "Threads",
+            "href": "https://www.threads.com/",
+            "title": null
+          },
+          {
+            "text": "連絡先のアップロードとユーザー以外",
+            "href": "https://www.facebook.com/help/instagram/261704639352628",
+            "title": null
+          },
+          {
+            "text": "Meta認証",
+            "href": "/accounts/meta_verified/?entrypoint=web_footer",
+            "title": null
+          },
+          {
+            "text": "利用規約",
+            "href": "https://help.instagram.com/581066165581870/?locale=ja_JP",
+            "title": null
+          },
+          {
+            "text": "プライバシーポリシー",
+            "href": "https://privacycenter.instagram.com/policy/",
+            "title": null
+          }
+        ],
+        "texts": [
+          {
+            "text": "メールアドレス、電話番号またはユーザーネームを入力してください。アカウントにアクセスするためのリンクをお送りします。",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xvs91rp xo1l8bm x1roi4f4 x2b8uid x1tu3fi x3x7a5m x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "メールアドレス、電話番号またはユーザーネーム",
+            "tagName": "span",
+            "className": "_adrs"
+          },
+          {
+            "text": "ログインリンクを送信",
+            "tagName": "span",
+            "className": "x559yi5"
+          },
+          {
+            "text": "パスワードをリセットできない場合",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1rpgw6r x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "Meta",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "基本データ",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "ブログ",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "求人",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "ヘルプ",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "API",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "プライバシー",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "利用規約",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "所在地",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "Instagram Lite",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "Threads",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "連絡先のアップロードとユーザー以外",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "Meta認証",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "日本語下向きシェブロンアイコンAfrikaansالعربيةČeštinaDanskDeutschΕλληνικάEnglishEnglish (UK)Español (España)EspañolفارسیSuomiFrançaisעבריתBahasa IndonesiaItaliano日本語한국어Bahasa MelayuNorskNederlandsPolskiPortuguês (Brasil)Português (Portugal)РусскийSvenskaภาษาไทยFilipinoTürkçe中文(简体)中文(台灣)বাংলাગુજરાતીहिन्दीHrvatskiMagyarಕನ್ನಡമലയാളംमराठीनेपालीਪੰਜਾਬੀසිංහලSlovenčinaதமிழ்తెలుగుاردوTiếng Việt中文(香港)БългарскиFrançais (Canada)RomânăСрпскиУкраїнська",
+            "tagName": "span",
+            "className": "x1ypdohk x1rg5ohu x1n2onr6 x16dsc37"
+          },
+          {
+            "text": "日本語",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "下向きシェブロンアイコン",
+            "tagName": "span",
+            "className": null
+          },
+          {
+            "text": "© 2025 Instagram from Meta",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "次に進むことで、Instagramの利用規約および プライバシーポリシーに同意するものとします。",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x5n08af x1yc453h x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "利用規約",
+            "tagName": "span",
+            "className": "x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs xt0psk2 x1i0vuye x1fhwpqd x1s688f x5n08af x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "プライバシーポリシー",
+            "tagName": "span",
+            "className": "x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs xt0psk2 x1i0vuye x1fhwpqd x1s688f x5n08af x10wh9bi xpm28yp x8viiok x1o7cslx"
+          }
+        ],
+        "images": [],
+        "custom": []
+      },
+      "links": [
+        "https://www.instagram.com/",
+        "https://www.instagram.com/accounts/login/?next=%2Faccounts%2Fpassword%2Freset%2F&source=desktop_nav",
+        "https://www.instagram.com/accounts/emailsignup/",
+        "https://www.instagram.com/accounts/account_recovery/?source=web_account_recovery&username=&waterfall_id=dd4c449c-20f9-4631-9857-2d8e3dc9c3e3",
+        "https://www.instagram.com/accounts/login/?source=reset_password",
+        "https://about.meta.com/",
+        "https://about.instagram.com/",
+        "https://about.instagram.com/blog/",
+        "https://about.instagram.com/about-us/careers",
+        "https://help.instagram.com/",
+        "https://developers.facebook.com/docs/instagram",
+        "https://www.instagram.com/legal/privacy/",
+        "https://www.instagram.com/legal/terms/",
+        "https://www.instagram.com/explore/locations/",
+        "https://www.instagram.com/web/lite/",
+        "https://www.threads.com/",
+        "https://www.facebook.com/help/instagram/261704639352628",
+        "https://www.instagram.com/accounts/meta_verified/?entrypoint=web_footer",
+        "https://help.instagram.com/581066165581870/?locale=ja_JP",
+        "https://privacycenter.instagram.com/policy/"
+      ],
+      "timestamp": "2025-07-17T18:24:48.874Z",
+      "depth": 1
+    },
+    {
+      "url": "https://www.instagram.com/accounts/emailsignup/",
+      "title": "登録 • Instagram",
+      "elements": {
+        "links": [
+          {
+            "text": "詳しくはこちら",
+            "href": "https://www.facebook.com/help/instagram/261704639352628",
+            "title": null
+          },
+          {
+            "text": "利用規約",
+            "href": "https://help.instagram.com/581066165581870/?locale=ja_JP",
+            "title": null
+          },
+          {
+            "text": "プライバシーポリシー",
+            "href": "https://www.facebook.com/privacy/policy",
+            "title": null
+          },
+          {
+            "text": "Cookieポリシー",
+            "href": "/legal/cookies/",
+            "title": null
+          },
+          {
+            "text": "ログインする",
+            "href": "/accounts/login/?source=auth_switcher",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3D0ACC6D48-7DB5-4772-808C-0274C7230518%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "ms-windows-store://pdp/?productid=9nblggh5l9xt&referrer=appbadge&source=www.instagram.com&mode=mini&pos=22%2C47%2C1282%2C800",
+            "title": null
+          },
+          {
+            "text": "Meta",
+            "href": "https://about.meta.com/",
+            "title": null
+          },
+          {
+            "text": "基本データ",
+            "href": "https://about.instagram.com/",
+            "title": null
+          },
+          {
+            "text": "ブログ",
+            "href": "https://about.instagram.com/blog/",
+            "title": null
+          },
+          {
+            "text": "求人",
+            "href": "https://about.instagram.com/about-us/careers",
+            "title": null
+          },
+          {
+            "text": "ヘルプ",
+            "href": "https://help.instagram.com/",
+            "title": null
+          },
+          {
+            "text": "API",
+            "href": "https://developers.facebook.com/docs/instagram",
+            "title": null
+          },
+          {
+            "text": "プライバシー",
+            "href": "/legal/privacy/",
+            "title": null
+          },
+          {
+            "text": "利用規約",
+            "href": "/legal/terms/",
+            "title": null
+          },
+          {
+            "text": "所在地",
+            "href": "/explore/locations/",
+            "title": null
+          },
+          {
+            "text": "Instagram Lite",
+            "href": "/web/lite/",
+            "title": null
+          },
+          {
+            "text": "Threads",
+            "href": "https://www.threads.com/",
+            "title": null
+          },
+          {
+            "text": "連絡先のアップロードとユーザー以外",
+            "href": "https://www.facebook.com/help/instagram/261704639352628",
+            "title": null
+          },
+          {
+            "text": "Meta認証",
+            "href": "/accounts/meta_verified/?entrypoint=web_footer",
+            "title": null
+          },
+          {
+            "text": "利用規約",
+            "href": "https://help.instagram.com/581066165581870/?locale=ja_JP",
+            "title": null
+          },
+          {
+            "text": "プライバシーポリシー",
+            "href": "https://privacycenter.instagram.com/policy/",
+            "title": null
+          }
+        ],
+        "texts": [
+          {
+            "text": "携帯電話番号またはメールアドレス",
+            "tagName": "span",
+            "className": "_aa4a"
+          },
+          {
+            "text": "パスワード",
+            "tagName": "span",
+            "className": "_aa4a"
+          },
+          {
+            "text": "フルネーム",
+            "tagName": "span",
+            "className": "_aa4a"
+          },
+          {
+            "text": "ユーザーネーム",
+            "tagName": "span",
+            "className": "_aa4a"
+          },
+          {
+            "text": "サービスの利用者があなたの連絡先情報をInstagramにアップロードしている場合があります。詳しくはこちら登録することで、Facebookの利用規約、プライバシーポリシー、Cookieポリシーに同意するものとします。",
+            "tagName": "p",
+            "className": "_aai1"
+          },
+          {
+            "text": "サービスの利用者があなたの連絡先情報をInstagramにアップロードしている場合があります。詳しくはこちら登録することで、Facebookの利用規約、プライバシーポリシー、Cookieポリシーに同意するものとします。",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "サービスの利用者があなたの連絡先情報をInstagramにアップロードしている場合があります。詳しくはこちら",
+            "tagName": "span",
+            "className": "x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs xt0psk2 x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "アカウントをお持ちですか？ ログインする",
+            "tagName": "p",
+            "className": "x5n08af x1f6kntn xcxhlts xjx09e3 x1fqp7bg xx6jrq6 x2b8uid"
+          },
+          {
+            "text": "ログインする",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xvs91rp x1s688f x1iiplp5 x1tu3fi x3x7a5m x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "ダウンロード",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xvs91rp xo1l8bm x5n08af x2b8uid x1tu3fi x3x7a5m x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "Meta",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "基本データ",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "ブログ",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "求人",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "ヘルプ",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "API",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "プライバシー",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "利用規約",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "所在地",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "Instagram Lite",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "Threads",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "連絡先のアップロードとユーザー以外",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "Meta認証",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "日本語下向きシェブロンアイコンAfrikaansالعربيةČeštinaDanskDeutschΕλληνικάEnglishEnglish (UK)Español (España)EspañolفارسیSuomiFrançaisעבריתBahasa IndonesiaItaliano日本語한국어Bahasa MelayuNorskNederlandsPolskiPortuguês (Brasil)Português (Portugal)РусскийSvenskaภาษาไทยFilipinoTürkçe中文(简体)中文(台灣)বাংলাગુજરાતીहिन्दीHrvatskiMagyarಕನ್ನಡമലയാളംमराठीनेपालीਪੰਜਾਬੀසිංහලSlovenčinaதமிழ்తెలుగుاردوTiếng Việt中文(香港)БългарскиFrançais (Canada)RomânăСрпскиУкраїнська",
+            "tagName": "span",
+            "className": "x1ypdohk x1rg5ohu x1n2onr6 x16dsc37"
+          },
+          {
+            "text": "日本語",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "下向きシェブロンアイコン",
+            "tagName": "span",
+            "className": null
+          },
+          {
+            "text": "© 2025 Instagram from Meta",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "次に進むことで、Instagramの利用規約および プライバシーポリシーに同意するものとします。",
+            "tagName": "span",
+            "className": "x1lliihq x1plvlek xryxfnj x1n2onr6 x1ji0vk5 x18bv5gf x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x5n08af x1yc453h x1s3etm8 x676frb x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "利用規約",
+            "tagName": "span",
+            "className": "x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs xt0psk2 x1i0vuye x1fhwpqd x1s688f x5n08af x10wh9bi xpm28yp x8viiok x1o7cslx"
+          },
+          {
+            "text": "プライバシーポリシー",
+            "tagName": "span",
+            "className": "x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs xt0psk2 x1i0vuye x1fhwpqd x1s688f x5n08af x10wh9bi xpm28yp x8viiok x1o7cslx"
+          }
+        ],
+        "images": [
+          {
+            "src": "https://static.cdninstagram.com/rsrc.php/v4/yY/r/Wg4QXUge1nK.png",
+            "alt": "Google Playでダウンロード",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://static.cdninstagram.com/rsrc.php/v4/y3/r/nHo7nDh0Dzp.png",
+            "alt": "Microsoftからダウンロード",
+            "title": null,
+            "width": null,
+            "height": null
+          }
+        ],
+        "custom": []
+      },
+      "links": [
+        "https://www.facebook.com/help/instagram/261704639352628",
+        "https://help.instagram.com/581066165581870/?locale=ja_JP",
+        "https://www.facebook.com/privacy/policy",
+        "https://www.instagram.com/legal/cookies/",
+        "https://www.instagram.com/accounts/login/?source=auth_switcher",
+        "https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3D0ACC6D48-7DB5-4772-808C-0274C7230518%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge",
+        "https://www.instagram.com/ms-windows-store://pdp/?productid=9nblggh5l9xt&referrer=appbadge&source=www.instagram.com&mode=mini&pos=22%2C47%2C1282%2C800",
+        "https://about.meta.com/",
+        "https://about.instagram.com/",
+        "https://about.instagram.com/blog/",
+        "https://about.instagram.com/about-us/careers",
+        "https://help.instagram.com/",
+        "https://developers.facebook.com/docs/instagram",
+        "https://www.instagram.com/legal/privacy/",
+        "https://www.instagram.com/legal/terms/",
+        "https://www.instagram.com/explore/locations/",
+        "https://www.instagram.com/web/lite/",
+        "https://www.threads.com/",
+        "https://www.instagram.com/accounts/meta_verified/?entrypoint=web_footer",
+        "https://privacycenter.instagram.com/policy/"
+      ],
+      "timestamp": "2025-07-17T18:24:51.844Z",
+      "depth": 1
+    },
+    {
+      "url": "https://about.meta.com/",
+      "title": "Meta | ソーシャルテクノロジー企業",
+      "elements": {
+        "links": [
+          {
+            "text": "Skip to content",
+            "href": "#before-content",
+            "title": null
+          },
+          {
+            "text": "メインコンテンツにスキップ",
+            "href": "#mdc-main-content",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "/",
+            "title": null
+          },
+          {
+            "text": "AIグラス",
+            "href": "/ai-glasses/",
+            "title": null
+          },
+          {
+            "text": "Meta Quest",
+            "href": "/quest/",
+            "title": null
+          },
+          {
+            "text": "アプリとゲーム",
+            "href": "/experiences/?utm_content=53192",
+            "title": null
+          },
+          {
+            "text": "Metaについてもっと知る",
+            "href": "https://www.meta.com/ja-jp/about/",
+            "title": null
+          },
+          {
+            "text": "サポート",
+            "href": "/help/",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "/bag/",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "/login/?next=https%3A%2F%2Fwww.meta.com%2Fja-jp%2Fabout%2F%3Futm_source%3Dabout.meta.com%26utm_medium%3Dredirect",
+            "title": null
+          },
+          {
+            "text": "Metaのミッション",
+            "href": "https://www.meta.com/ja-jp/about/company-info/",
+            "title": null
+          },
+          {
+            "text": "Metaのテクノロジー",
+            "href": "https://www.meta.com/ja-jp/technologies/",
+            "title": null
+          },
+          {
+            "text": "Meta AI",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fai.meta.com%2F%3Futm_source%3Dabout_meta_site%26utm_medium%3Dweb%26utm_content%3Dhero_homepage&h=AT3jf-g4NDkhWFP9yASAAJG20KWn8hqqx-9VrTADhXCor2nUOhPuRKMmkSFc7AWcaIFfisv3888a-LHZgGEEef4ssYfsIKmsrFOzs6hxcinGRCXtMtFPwUu7U7g5y67fa9xb66tzSreLpDz_QfWhUXogkI6_lJI9ukQeyQ",
+            "title": null
+          },
+          {
+            "text": "Metaの取り組み",
+            "href": "https://www.meta.com/ja-jp/actions/",
+            "title": null
+          },
+          {
+            "text": "   ",
+            "href": "#",
+            "title": null
+          },
+          {
+            "text": "   ",
+            "href": "#",
+            "title": null
+          },
+          {
+            "text": "   ",
+            "href": "#",
+            "title": null
+          },
+          {
+            "text": "   ",
+            "href": "#",
+            "title": null
+          },
+          {
+            "text": "ニュースルームでその他のニュースを見る",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2Fnews%2F&h=AT37Wao920JBOUUBBCBtUb11c9SntbSCppUQJT8XT7td9faYYd388-S57FvHWeXqLbwOhFRvaRxWZFTgv3k6s0_PG721aPcSNi0DKdEbapizXNR8O0jWQ7eCAQzp9hCqs1BPG9lNQ-0P409HSMo1bj-O01QVkw4OHIH2WQ",
+            "title": null
+          },
+          {
+            "text": "続きを読む",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2Fnews%2F2025%2F07%2Fcentralized-campaigns-ai-support-businesses-whatsapp%2F&h=AT3SYugy0kgOBTk-K9E1PeYuJ5OK0nhVvW0hKnmWdwoXHjyqlgRxuuUMMCSi4Tjpdqg4Gd9vCsjRApdbR3V736gmReQb4_Dot5Uov5XKVz8JDTiwCRY-elaGq2MDjFuaLLjhn609rsG-7Ozq6Cxr_p6mNZwygpNgyip_dQ",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2Fnews%2F2025%2F07%2Fcentralized-campaigns-ai-support-businesses-whatsapp%2F&h=AT0ViL20uhI4gghWc91tC0j9022_m-LoUsIp_ET325nEC8309OLV9ovQqc1-l_F_QQf0fegxXWDm8u4-J0O54ammTAgGDiYd9zs64w0-mS0q3g38_j1qSCGE1SBJ-WpOn-6ZTj9F45EgjQYBqkDdIJQyYZGuUo5GKHVJsw",
+            "title": null
+          },
+          {
+            "text": "続きを読む",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2Fnews%2F2025%2F06%2Fintroducing-oakley-meta-glasses-a-new-category-of-performance-ai-glasses%2F&h=AT0stffpTwqMCJKq_IJFaKNlTVCIS_0hzdWLzvwJwu5jl2NmnFTcI5eZjSyLCwqzIlqUTzasLhCWpqqHo8ttS4lqUJqt6PnWpp_mnrzILwUfrgJ5H3h10KweP5AmYniB9H9A5HaNU3wLpFvBVGsYIk0b14CTduSj22K70w",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2Fnews%2F2025%2F06%2Fintroducing-oakley-meta-glasses-a-new-category-of-performance-ai-glasses%2F&h=AT3wNPgBzbNwRrrJhzTlS-la6vDFpz_cut-NOm-TS2eStboYEqOUpyegKRRt4bjg2T-BnAIsU-v7MxP4hn1nh3iw50RTjice0ZpXmED3f1prlGTg-evdghICj7usU-CLEbzWzPz4EAXUHTmtBwxa2ZBdeuFFVQRz_AkrHw",
+            "title": null
+          },
+          {
+            "text": "続きを読む",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2Fnews%2F2025%2F06%2Fintroducing-passkeys-facebook-easier-sign-in%2F&h=AT3gC_IgiGpevzaVn6LdpXy-Oydjjub8JIAUW_x98_Ik-Fx4iP5jjU93jUm3LYGoQaPAkX78a2evctaz02BhUKdznqI-kUQEu-DpuIimBgbBbIEHllR8nQ_6uM7UtwF9eRTPRobNDqOGuvQbdukV8DTZtzsyGcDRvi5zAg",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2Fnews%2F2025%2F06%2Fintroducing-passkeys-facebook-easier-sign-in%2F&h=AT1S9NV986FJIw4IziGpSwPcYgiGvZTSCmzK0Zt8m_xLwQGv_odfN63KvAjryXVGR97PLEiFRFe345qOyvImYR_YFtQjkKHskTQj2iHPOeG8z88pghCbJwM8pKJzq66aLHNrbXAd02g8Ek6wGCgx_7_laRLJH4iRhdvQdg",
+            "title": null
+          },
+          {
+            "text": "購入する",
+            "href": "https://www.meta.com/ai-glasses/shop-all/?utm_content=38629",
+            "title": null
+          },
+          {
+            "text": "購入する",
+            "href": "https://www.meta.com/quest/quest-3s/?utm_content=64900",
+            "title": null
+          },
+          {
+            "text": " Metaのテクノロジーをチェックする ",
+            "href": "https://www.meta.com/ja-jp/technologies/",
+            "title": null
+          },
+          {
+            "text": "ヘルプセンターへ移動",
+            "href": "https://www.meta.com/help/?utm_content=15874",
+            "title": null
+          },
+          {
+            "text": " 詳しくはこちら ",
+            "href": "https://www.meta.com/ja-jp/actions/",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Ftransparency.meta.com%2F&h=AT124VSVD5baXOOxwGCL3TYF7y_X1p7BsAQU75U8i9FkU9XILgEWyzupzwmwLqbgFsztq6hzvsY8tvctqjraVQbgvOzV4pJAU4cuwgAhhm7rNaW8K70SHzg9KKHn19YNwdtGHLquNAQtEJR5zr3PCU5P5cSY00TnUTBOgw",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://www.meta.com/ja-jp/actions/protecting-privacy-and-security/",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://www.meta.com/ja-jp/actions/responsible-innovation/",
+            "title": null
+          },
+          {
+            "text": " 経営陣について知る ",
+            "href": "https://www.meta.com/ja-jp/media-gallery/executives/",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://www.facebook.com/Meta",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://www.threads.net/@meta",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://www.instagram.com/meta/",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://twitter.com/Meta",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://www.youtube.com/meta",
+            "title": null
+          },
+          {
+            "text": "Ray-Ban Metaグラス",
+            "href": "/ai-glasses/shop-all/",
+            "title": null
+          },
+          {
+            "text": "Meta Quest",
+            "href": "/quest/",
+            "title": null
+          },
+          {
+            "text": "アクセサリー",
+            "href": "/quest/accessories/",
+            "title": null
+          },
+          {
+            "text": "アプリとゲーム",
+            "href": "/experiences/",
+            "title": null
+          },
+          {
+            "text": "Meta Questギフトカード",
+            "href": "/quest/gift-cards/",
+            "title": null
+          },
+          {
+            "text": "Ray-Banのその他の製品",
+            "href": "https://rayban.com/",
+            "title": null
+          },
+          {
+            "text": "Meta for Work",
+            "href": "https://forwork.meta.com/",
+            "title": null
+          },
+          {
+            "text": "Meta for Education",
+            "href": "https://forwork.meta.com/meta-for-education/",
+            "title": null
+          },
+          {
+            "text": "ブログ",
+            "href": "/blog/",
+            "title": null
+          },
+          {
+            "text": "Metaヘルプセンター",
+            "href": "/help/",
+            "title": null
+          },
+          {
+            "text": "注文ステータス",
+            "href": "/order/find/",
+            "title": null
+          },
+          {
+            "text": "返品",
+            "href": "/returns/",
+            "title": null
+          },
+          {
+            "text": "製品デモを検索",
+            "href": "/demo/",
+            "title": null
+          },
+          {
+            "text": "認定販売代理店",
+            "href": "/retailers/",
+            "title": null
+          },
+          {
+            "text": "法務",
+            "href": "/legal/",
+            "title": null
+          },
+          {
+            "text": "販売規約",
+            "href": "/legal/terms-of-sale/",
+            "title": null
+          },
+          {
+            "text": "Meta Questセーフティセンター",
+            "href": "/quest/safety-center/",
+            "title": null
+          },
+          {
+            "text": "クリエイター",
+            "href": "https://creator.oculus.com/",
+            "title": null
+          },
+          {
+            "text": "開発者",
+            "href": "https://developers.meta.com/horizon/",
+            "title": null
+          },
+          {
+            "text": "ビジネス",
+            "href": "https://www.facebook.com/business/ads/",
+            "title": null
+          },
+          {
+            "text": "非営利団体",
+            "href": "https://www.facebook.com/government-nonprofits/best-practices/nonprofits/",
+            "title": null
+          },
+          {
+            "text": "SDKのダウンロード",
+            "href": "https://developers.meta.com/horizon/downloads/unity/",
+            "title": null
+          },
+          {
+            "text": "Meta専用製品パートナープログラム",
+            "href": "/made-for-meta/",
+            "title": null
+          },
+          {
+            "text": "VR for Good",
+            "href": "https://www.meta.com/ja-jp/community/vr-for-good/",
+            "title": null
+          },
+          {
+            "text": "データとプライバシー",
+            "href": "https://www.meta.com/ja-jp/actions/protecting-privacy-and-security/",
+            "title": null
+          },
+          {
+            "text": "責任あるビジネス慣行",
+            "href": "https://www.meta.com/ja-jp/actions/responsible-business-practices/",
+            "title": null
+          },
+          {
+            "text": "選挙",
+            "href": "https://www.meta.com/ja-jp/actions/preparing-for-elections-with-meta/",
+            "title": null
+          },
+          {
+            "text": "Metaについて",
+            "href": "https://www.meta.com/ja-jp/about/company-info/",
+            "title": null
+          },
+          {
+            "text": "採用情報",
+            "href": "https://metacareers.com/",
+            "title": null
+          },
+          {
+            "text": "メディアギャラリー",
+            "href": "https://www.meta.com/ja-jp/media-gallery/",
+            "title": null
+          },
+          {
+            "text": "ブランドリソース",
+            "href": "https://about.meta.com/ja/brand/resources/",
+            "title": null
+          },
+          {
+            "text": "投資家向け",
+            "href": "https://investor.atmeta.com/home/default.aspx",
+            "title": null
+          },
+          {
+            "text": "ニュースルーム",
+            "href": "https://about.fb.com/news/",
+            "title": null
+          },
+          {
+            "text": "コミュニティ規定",
+            "href": "https://transparency.meta.com/policies/community-standards/",
+            "title": null
+          },
+          {
+            "text": "プライバシーポリシー",
+            "href": "/legal/privacy-policy/",
+            "title": null
+          },
+          {
+            "text": "規約",
+            "href": "https://www.facebook.com/terms.php/",
+            "title": null
+          },
+          {
+            "text": "Cookieポリシー",
+            "href": "https://www.facebook.com/privacy/policies/cookies/",
+            "title": null
+          },
+          {
+            "text": "Facebookヘルプセンター",
+            "href": "https://www.facebook.com/help?ref=about.facebook.com",
+            "title": null
+          },
+          {
+            "text": "Messengerヘルプセンター",
+            "href": "https://www.facebook.com/help/messenger-app/?ref=about.facebook.com",
+            "title": null
+          },
+          {
+            "text": "Instagramヘルプセンター",
+            "href": "https://help.instagram.com/",
+            "title": null
+          },
+          {
+            "text": "WhatsAppヘルプセンター",
+            "href": "https://faq.whatsapp.com/",
+            "title": null
+          },
+          {
+            "text": "Workplaceヘルプセンター",
+            "href": "https://www.facebook.com/help/work?ref=about.facebook.com",
+            "title": null
+          },
+          {
+            "text": "Meta認証",
+            "href": "https://www.meta.com/ja-jp/meta-verified/",
+            "title": null
+          },
+          {
+            "text": "Ray-Ban Metaグラス",
+            "href": "/ai-glasses/shop-all/",
+            "title": null
+          },
+          {
+            "text": "Meta Quest",
+            "href": "/quest/",
+            "title": null
+          },
+          {
+            "text": "アクセサリー",
+            "href": "/quest/accessories/",
+            "title": null
+          },
+          {
+            "text": "アプリとゲーム",
+            "href": "/experiences/",
+            "title": null
+          },
+          {
+            "text": "Meta Questギフトカード",
+            "href": "/quest/gift-cards/",
+            "title": null
+          },
+          {
+            "text": "Ray-Banのその他の製品",
+            "href": "https://rayban.com/",
+            "title": null
+          },
+          {
+            "text": "Meta for Work",
+            "href": "https://forwork.meta.com/",
+            "title": null
+          },
+          {
+            "text": "Meta for Education",
+            "href": "https://forwork.meta.com/meta-for-education/",
+            "title": null
+          },
+          {
+            "text": "ブログ",
+            "href": "/blog/",
+            "title": null
+          },
+          {
+            "text": "Metaヘルプセンター",
+            "href": "/help/",
+            "title": null
+          },
+          {
+            "text": "注文ステータス",
+            "href": "/order/find/",
+            "title": null
+          },
+          {
+            "text": "返品",
+            "href": "/returns/",
+            "title": null
+          },
+          {
+            "text": "製品デモを検索",
+            "href": "/demo/",
+            "title": null
+          },
+          {
+            "text": "認定販売代理店",
+            "href": "/retailers/",
+            "title": null
+          },
+          {
+            "text": "法務",
+            "href": "/legal/",
+            "title": null
+          },
+          {
+            "text": "販売規約",
+            "href": "/legal/terms-of-sale/",
+            "title": null
+          },
+          {
+            "text": "Meta Questセーフティセンター",
+            "href": "/quest/safety-center/",
+            "title": null
+          },
+          {
+            "text": "クリエイター",
+            "href": "https://creator.oculus.com/",
+            "title": null
+          },
+          {
+            "text": "開発者",
+            "href": "https://developers.meta.com/horizon/",
+            "title": null
+          },
+          {
+            "text": "ビジネス",
+            "href": "https://www.facebook.com/business/ads/",
+            "title": null
+          },
+          {
+            "text": "非営利団体",
+            "href": "https://www.facebook.com/government-nonprofits/best-practices/nonprofits/",
+            "title": null
+          },
+          {
+            "text": "SDKのダウンロード",
+            "href": "https://developers.meta.com/horizon/downloads/unity/",
+            "title": null
+          },
+          {
+            "text": "Meta専用製品パートナープログラム",
+            "href": "/made-for-meta/",
+            "title": null
+          },
+          {
+            "text": "VR for Good",
+            "href": "https://www.meta.com/ja-jp/community/vr-for-good/",
+            "title": null
+          },
+          {
+            "text": "データとプライバシー",
+            "href": "https://www.meta.com/ja-jp/actions/protecting-privacy-and-security/",
+            "title": null
+          },
+          {
+            "text": "責任あるビジネス慣行",
+            "href": "https://www.meta.com/ja-jp/actions/responsible-business-practices/",
+            "title": null
+          },
+          {
+            "text": "選挙",
+            "href": "https://www.meta.com/ja-jp/actions/preparing-for-elections-with-meta/",
+            "title": null
+          },
+          {
+            "text": "Metaについて",
+            "href": "https://www.meta.com/ja-jp/about/company-info/",
+            "title": null
+          },
+          {
+            "text": "採用情報",
+            "href": "https://metacareers.com/",
+            "title": null
+          },
+          {
+            "text": "メディアギャラリー",
+            "href": "https://www.meta.com/ja-jp/media-gallery/",
+            "title": null
+          },
+          {
+            "text": "ブランドリソース",
+            "href": "https://about.meta.com/ja/brand/resources/",
+            "title": null
+          },
+          {
+            "text": "投資家向け",
+            "href": "https://investor.atmeta.com/home/default.aspx",
+            "title": null
+          },
+          {
+            "text": "ニュースルーム",
+            "href": "https://about.fb.com/news/",
+            "title": null
+          },
+          {
+            "text": "コミュニティ規定",
+            "href": "https://transparency.meta.com/policies/community-standards/",
+            "title": null
+          },
+          {
+            "text": "プライバシーポリシー",
+            "href": "/legal/privacy-policy/",
+            "title": null
+          },
+          {
+            "text": "規約",
+            "href": "https://www.facebook.com/terms.php/",
+            "title": null
+          },
+          {
+            "text": "Cookieポリシー",
+            "href": "https://www.facebook.com/privacy/policies/cookies/",
+            "title": null
+          },
+          {
+            "text": "Facebookヘルプセンター",
+            "href": "https://www.facebook.com/help?ref=about.facebook.com",
+            "title": null
+          },
+          {
+            "text": "Messengerヘルプセンター",
+            "href": "https://www.facebook.com/help/messenger-app/?ref=about.facebook.com",
+            "title": null
+          },
+          {
+            "text": "Instagramヘルプセンター",
+            "href": "https://help.instagram.com/",
+            "title": null
+          },
+          {
+            "text": "WhatsAppヘルプセンター",
+            "href": "https://faq.whatsapp.com/",
+            "title": null
+          },
+          {
+            "text": "Workplaceヘルプセンター",
+            "href": "https://www.facebook.com/help/work?ref=about.facebook.com",
+            "title": null
+          },
+          {
+            "text": "Meta認証",
+            "href": "https://www.meta.com/ja-jp/meta-verified/",
+            "title": null
+          },
+          {
+            "text": "Ray-Ban Metaグラス",
+            "href": "/ai-glasses/shop-all/",
+            "title": null
+          },
+          {
+            "text": "Meta Quest",
+            "href": "/quest/",
+            "title": null
+          },
+          {
+            "text": "アクセサリー",
+            "href": "/quest/accessories/",
+            "title": null
+          },
+          {
+            "text": "アプリとゲーム",
+            "href": "/experiences/",
+            "title": null
+          },
+          {
+            "text": "Meta Questギフトカード",
+            "href": "/quest/gift-cards/",
+            "title": null
+          },
+          {
+            "text": "Ray-Banのその他の製品",
+            "href": "https://rayban.com/",
+            "title": null
+          },
+          {
+            "text": "Meta for Work",
+            "href": "https://forwork.meta.com/",
+            "title": null
+          },
+          {
+            "text": "Meta for Education",
+            "href": "https://forwork.meta.com/meta-for-education/",
+            "title": null
+          },
+          {
+            "text": "ブログ",
+            "href": "/blog/",
+            "title": null
+          },
+          {
+            "text": "Metaヘルプセンター",
+            "href": "/help/",
+            "title": null
+          },
+          {
+            "text": "注文ステータス",
+            "href": "/order/find/",
+            "title": null
+          },
+          {
+            "text": "返品",
+            "href": "/returns/",
+            "title": null
+          },
+          {
+            "text": "製品デモを検索",
+            "href": "/demo/",
+            "title": null
+          },
+          {
+            "text": "認定販売代理店",
+            "href": "/retailers/",
+            "title": null
+          },
+          {
+            "text": "法務",
+            "href": "/legal/",
+            "title": null
+          },
+          {
+            "text": "販売規約",
+            "href": "/legal/terms-of-sale/",
+            "title": null
+          },
+          {
+            "text": "Meta Questセーフティセンター",
+            "href": "/quest/safety-center/",
+            "title": null
+          },
+          {
+            "text": "クリエイター",
+            "href": "https://creator.oculus.com/",
+            "title": null
+          },
+          {
+            "text": "開発者",
+            "href": "https://developers.meta.com/horizon/",
+            "title": null
+          },
+          {
+            "text": "ビジネス",
+            "href": "https://www.facebook.com/business/ads/",
+            "title": null
+          },
+          {
+            "text": "非営利団体",
+            "href": "https://www.facebook.com/government-nonprofits/best-practices/nonprofits/",
+            "title": null
+          },
+          {
+            "text": "SDKのダウンロード",
+            "href": "https://developers.meta.com/horizon/downloads/unity/",
+            "title": null
+          },
+          {
+            "text": "Meta専用製品パートナープログラム",
+            "href": "/made-for-meta/",
+            "title": null
+          },
+          {
+            "text": "VR for Good",
+            "href": "https://www.meta.com/ja-jp/community/vr-for-good/",
+            "title": null
+          },
+          {
+            "text": "データとプライバシー",
+            "href": "https://www.meta.com/ja-jp/actions/protecting-privacy-and-security/",
+            "title": null
+          },
+          {
+            "text": "責任あるビジネス慣行",
+            "href": "https://www.meta.com/ja-jp/actions/responsible-business-practices/",
+            "title": null
+          },
+          {
+            "text": "選挙",
+            "href": "https://www.meta.com/ja-jp/actions/preparing-for-elections-with-meta/",
+            "title": null
+          },
+          {
+            "text": "Metaについて",
+            "href": "https://www.meta.com/ja-jp/about/company-info/",
+            "title": null
+          },
+          {
+            "text": "採用情報",
+            "href": "https://metacareers.com/",
+            "title": null
+          },
+          {
+            "text": "メディアギャラリー",
+            "href": "https://www.meta.com/ja-jp/media-gallery/",
+            "title": null
+          },
+          {
+            "text": "ブランドリソース",
+            "href": "https://about.meta.com/ja/brand/resources/",
+            "title": null
+          },
+          {
+            "text": "投資家向け",
+            "href": "https://investor.atmeta.com/home/default.aspx",
+            "title": null
+          },
+          {
+            "text": "ニュースルーム",
+            "href": "https://about.fb.com/news/",
+            "title": null
+          },
+          {
+            "text": "コミュニティ規定",
+            "href": "https://transparency.meta.com/policies/community-standards/",
+            "title": null
+          },
+          {
+            "text": "プライバシーポリシー",
+            "href": "/legal/privacy-policy/",
+            "title": null
+          },
+          {
+            "text": "規約",
+            "href": "https://www.facebook.com/terms.php/",
+            "title": null
+          },
+          {
+            "text": "Cookieポリシー",
+            "href": "https://www.facebook.com/privacy/policies/cookies/",
+            "title": null
+          },
+          {
+            "text": "Facebookヘルプセンター",
+            "href": "https://www.facebook.com/help?ref=about.facebook.com",
+            "title": null
+          },
+          {
+            "text": "Messengerヘルプセンター",
+            "href": "https://www.facebook.com/help/messenger-app/?ref=about.facebook.com",
+            "title": null
+          },
+          {
+            "text": "Instagramヘルプセンター",
+            "href": "https://help.instagram.com/",
+            "title": null
+          },
+          {
+            "text": "WhatsAppヘルプセンター",
+            "href": "https://faq.whatsapp.com/",
+            "title": null
+          },
+          {
+            "text": "Workplaceヘルプセンター",
+            "href": "https://www.facebook.com/help/work?ref=about.facebook.com",
+            "title": null
+          },
+          {
+            "text": "Meta認証",
+            "href": "https://www.meta.com/ja-jp/meta-verified/",
+            "title": null
+          },
+          {
+            "text": "Ray-Ban Metaグラス",
+            "href": "/ai-glasses/shop-all/",
+            "title": null
+          },
+          {
+            "text": "Meta Quest",
+            "href": "/quest/",
+            "title": null
+          },
+          {
+            "text": "アクセサリー",
+            "href": "/quest/accessories/",
+            "title": null
+          },
+          {
+            "text": "アプリとゲーム",
+            "href": "/experiences/",
+            "title": null
+          },
+          {
+            "text": "Meta Questギフトカード",
+            "href": "/quest/gift-cards/",
+            "title": null
+          },
+          {
+            "text": "Ray-Banのその他の製品",
+            "href": "https://rayban.com/",
+            "title": null
+          },
+          {
+            "text": "Meta for Work",
+            "href": "https://forwork.meta.com/",
+            "title": null
+          },
+          {
+            "text": "Meta for Education",
+            "href": "https://forwork.meta.com/meta-for-education/",
+            "title": null
+          },
+          {
+            "text": "ブログ",
+            "href": "/blog/",
+            "title": null
+          },
+          {
+            "text": "Metaヘルプセンター",
+            "href": "/help/",
+            "title": null
+          },
+          {
+            "text": "注文ステータス",
+            "href": "/order/find/",
+            "title": null
+          },
+          {
+            "text": "返品",
+            "href": "/returns/",
+            "title": null
+          },
+          {
+            "text": "製品デモを検索",
+            "href": "/demo/",
+            "title": null
+          },
+          {
+            "text": "認定販売代理店",
+            "href": "/retailers/",
+            "title": null
+          },
+          {
+            "text": "法務",
+            "href": "/legal/",
+            "title": null
+          },
+          {
+            "text": "販売規約",
+            "href": "/legal/terms-of-sale/",
+            "title": null
+          },
+          {
+            "text": "Meta Questセーフティセンター",
+            "href": "/quest/safety-center/",
+            "title": null
+          },
+          {
+            "text": "クリエイター",
+            "href": "https://creator.oculus.com/",
+            "title": null
+          },
+          {
+            "text": "開発者",
+            "href": "https://developers.meta.com/horizon/",
+            "title": null
+          },
+          {
+            "text": "ビジネス",
+            "href": "https://www.facebook.com/business/ads/",
+            "title": null
+          },
+          {
+            "text": "非営利団体",
+            "href": "https://www.facebook.com/government-nonprofits/best-practices/nonprofits/",
+            "title": null
+          },
+          {
+            "text": "SDKのダウンロード",
+            "href": "https://developers.meta.com/horizon/downloads/unity/",
+            "title": null
+          },
+          {
+            "text": "Meta専用製品パートナープログラム",
+            "href": "/made-for-meta/",
+            "title": null
+          },
+          {
+            "text": "VR for Good",
+            "href": "https://www.meta.com/ja-jp/community/vr-for-good/",
+            "title": null
+          },
+          {
+            "text": "データとプライバシー",
+            "href": "https://www.meta.com/ja-jp/actions/protecting-privacy-and-security/",
+            "title": null
+          },
+          {
+            "text": "責任あるビジネス慣行",
+            "href": "https://www.meta.com/ja-jp/actions/responsible-business-practices/",
+            "title": null
+          },
+          {
+            "text": "選挙",
+            "href": "https://www.meta.com/ja-jp/actions/preparing-for-elections-with-meta/",
+            "title": null
+          },
+          {
+            "text": "Metaについて",
+            "href": "https://www.meta.com/ja-jp/about/company-info/",
+            "title": null
+          },
+          {
+            "text": "採用情報",
+            "href": "https://metacareers.com/",
+            "title": null
+          },
+          {
+            "text": "メディアギャラリー",
+            "href": "https://www.meta.com/ja-jp/media-gallery/",
+            "title": null
+          },
+          {
+            "text": "ブランドリソース",
+            "href": "https://about.meta.com/ja/brand/resources/",
+            "title": null
+          },
+          {
+            "text": "投資家向け",
+            "href": "https://investor.atmeta.com/home/default.aspx",
+            "title": null
+          },
+          {
+            "text": "ニュースルーム",
+            "href": "https://about.fb.com/news/",
+            "title": null
+          },
+          {
+            "text": "コミュニティ規定",
+            "href": "https://transparency.meta.com/policies/community-standards/",
+            "title": null
+          },
+          {
+            "text": "プライバシーポリシー",
+            "href": "/legal/privacy-policy/",
+            "title": null
+          },
+          {
+            "text": "規約",
+            "href": "https://www.facebook.com/terms.php/",
+            "title": null
+          },
+          {
+            "text": "Cookieポリシー",
+            "href": "https://www.facebook.com/privacy/policies/cookies/",
+            "title": null
+          },
+          {
+            "text": "Facebookヘルプセンター",
+            "href": "https://www.facebook.com/help?ref=about.facebook.com",
+            "title": null
+          },
+          {
+            "text": "Messengerヘルプセンター",
+            "href": "https://www.facebook.com/help/messenger-app/?ref=about.facebook.com",
+            "title": null
+          },
+          {
+            "text": "Instagramヘルプセンター",
+            "href": "https://help.instagram.com/",
+            "title": null
+          },
+          {
+            "text": "WhatsAppヘルプセンター",
+            "href": "https://faq.whatsapp.com/",
+            "title": null
+          },
+          {
+            "text": "Workplaceヘルプセンター",
+            "href": "https://www.facebook.com/help/work?ref=about.facebook.com",
+            "title": null
+          },
+          {
+            "text": "Meta認証",
+            "href": "https://www.meta.com/ja-jp/meta-verified/",
+            "title": null
+          }
+        ],
+        "texts": [
+          {
+            "text": "メインコンテンツにスキップ",
+            "tagName": "span",
+            "className": "x1heor9g x17gzxuv x1rujz1s xex5isp xsp84uj x658qfi x1wsgf3v xn1wy4v xby3lk6 xcxolhg xh2n1af x1npfmwo xg94uf4 x1yyhlu9 x1i6xp69 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "AIグラス",
+            "tagName": "span",
+            "className": "x16g9bbj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta Quest",
+            "tagName": "span",
+            "className": "x16g9bbj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "アプリとゲーム",
+            "tagName": "span",
+            "className": "x16g9bbj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Metaについてもっと知る",
+            "tagName": "span",
+            "className": "x16g9bbj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "サポート",
+            "tagName": "span",
+            "className": "x16g9bbj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Metaは、人と人がつながる未来を創出しています",
+            "tagName": "h2",
+            "className": "_a92o _a5cw _a5wf _a5ct"
+          },
+          {
+            "text": "Metaのテクノロジーが、その未来を実現します",
+            "tagName": "h2",
+            "className": "_a92o _a5cw _a5wf _a5ct"
+          },
+          {
+            "text": "Metaのイノベーションは、つながるための新たな方法を提供します",
+            "tagName": "h2",
+            "className": "_a92o _a5cw _a5wf _a5ct"
+          },
+          {
+            "text": "すべての利用者が安全を確保できるよう支援しながら、ポジティブな影響を与えることに全力を尽くします",
+            "tagName": "h2",
+            "className": "_a92o _a5cw _a5wf _a5ct"
+          },
+          {
+            "text": "最新ニュースをチェックする",
+            "tagName": "h2",
+            "className": "_a92o _amqv _a5wf _a5ct"
+          },
+          {
+            "text": "キャンペーンの一元管理やAIサポートなどWhatsAppのビジネス向けニュース続きを読む",
+            "tagName": "span",
+            "className": "_1-qs _as8y"
+          },
+          {
+            "text": "キャンペーンの一元管理やAIサポートなどWhatsAppのビジネス向けニュース",
+            "tagName": "p",
+            "className": "_a92o _a5cy _a5w7 _a5ct"
+          },
+          {
+            "text": "パフォーマンスAIグラスの新たなカテゴリ、Oakley Metaグラスのご紹介続きを読む",
+            "tagName": "span",
+            "className": "_1-qs _as8y"
+          },
+          {
+            "text": "パフォーマンスAIグラスの新たなカテゴリ、Oakley Metaグラスのご紹介",
+            "tagName": "p",
+            "className": "_a92o _a5cy _a5w7 _a5ct"
+          },
+          {
+            "text": "サインインが簡単になるパスキーをFacebookに導入続きを読む",
+            "tagName": "span",
+            "className": "_1-qs _as8y"
+          },
+          {
+            "text": "サインインが簡単になるパスキーをFacebookに導入",
+            "tagName": "p",
+            "className": "_a92o _a5cy _a5w7 _a5ct"
+          },
+          {
+            "text": "最新のデバイスを購入して、世界を広げる",
+            "tagName": "p",
+            "className": "_a92o _amqv _a5wf"
+          },
+          {
+            "text": "Ray-Ban Meta AIグラス",
+            "tagName": "h2",
+            "className": "_a92o _a5e5 _a5wf _a5ct"
+          },
+          {
+            "text": "キャプチャ、シェア、保存を一瞬で。完全にハンズフリー。",
+            "tagName": "p",
+            "className": "_a92o _a5c- _a5wf _a5ct"
+          },
+          {
+            "text": "Meta Quest 3S",
+            "tagName": "h2",
+            "className": "_a92o _a5e5 _a5wf _a5ct"
+          },
+          {
+            "text": "Meta Quest 3Sで、驚きに満ちたMR(複合現実)の世界に飛び込もう。",
+            "tagName": "p",
+            "className": "_a92o _a5c- _a5wf _a5ct"
+          },
+          {
+            "text": "Metaの製品を使って新たな方法でつながる",
+            "tagName": "p",
+            "className": "_a92o _amqv _a5wf"
+          },
+          {
+            "text": " Metaのテクノロジーをチェックする ヘルプセンターへ移動",
+            "tagName": "p",
+            "className": "_a92o _a5d4 _a5wf _a5ct"
+          },
+          {
+            "text": "Metaの取り組みについて最新情報を入手する",
+            "tagName": "p",
+            "className": "_a92o _am_4 _a5w7 _a5ct"
+          },
+          {
+            "text": "人々が安全を確保できるよう支援しながら、ポジティブな影響を与えることに全力を尽くします。",
+            "tagName": "p",
+            "className": "_a92o _am_b _a5w7 _a5ct"
+          },
+          {
+            "text": " 詳しくはこちら ",
+            "tagName": "p",
+            "className": "_a92o _a5d4 _a5w7 _a5ct"
+          },
+          {
+            "text": "人々の意見を守り、人々が安全につながってシェアできるようにします",
+            "tagName": "p",
+            "className": "_a92o _am_d _a5w7"
+          },
+          {
+            "text": "利用者がプライバシーを管理できるようにし、個人情報を保護します",
+            "tagName": "p",
+            "className": "_a92o _am_d _a5w7"
+          },
+          {
+            "text": "プライバシーと安全を念頭に未来の創造に取り組みます",
+            "tagName": "p",
+            "className": "_a92o _am_d _a5w7"
+          },
+          {
+            "text": "経営陣の紹介",
+            "tagName": "p",
+            "className": "_a92o _am_4 _a5w7 _a5ct"
+          },
+          {
+            "text": "Metaの経営陣は、MR(複合現実)とAIが進化する中でMetaを導き、新しい技術を通して人と人をつなげる次なる進化に向けて取り組んでいます。",
+            "tagName": "p",
+            "className": "_a92o _am_b _a5w7 _a5ct"
+          },
+          {
+            "text": " 経営陣について知る ",
+            "tagName": "p",
+            "className": "_a92o _a5d4 _a5w7 _a5ct"
+          },
+          {
+            "text": "Ray-Ban Metaグラス",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta Quest",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "アクセサリー",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "アプリとゲーム",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta Questギフトカード",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Ray-Banのその他の製品",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta for Work",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta for Education",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "ブログ",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Metaヘルプセンター",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "注文ステータス",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "返品",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "製品デモを検索",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "認定販売代理店",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "法務",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "販売規約",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta Questセーフティセンター",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "クリエイター",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "開発者",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "ビジネス",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "非営利団体",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "SDKのダウンロード",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta専用製品パートナープログラム",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "VR for Good",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "データとプライバシー",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "責任あるビジネス慣行",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "選挙",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Metaについて",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "採用情報",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "メディアギャラリー",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "ブランドリソース",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "投資家向け",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "ニュースルーム",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "コミュニティ規定",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "プライバシーポリシー",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "規約",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Cookieポリシー",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Facebookヘルプセンター",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Messengerヘルプセンター",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Instagramヘルプセンター",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "WhatsAppヘルプセンター",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Workplaceヘルプセンター",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta認証",
+            "tagName": "span",
+            "className": "x16g9bbj x8dyrlr x1jchvi3 xjat59b x1evy7pa x1twfotg x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Ray-Ban Metaグラス",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta Quest",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "アクセサリー",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "アプリとゲーム",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta Questギフトカード",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Ray-Banのその他の製品",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta for Work",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta for Education",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "ブログ",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Metaヘルプセンター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "注文ステータス",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "返品",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "製品デモを検索",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "認定販売代理店",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "法務",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "販売規約",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta Questセーフティセンター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "クリエイター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "開発者",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "ビジネス",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "非営利団体",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "SDKのダウンロード",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta専用製品パートナープログラム",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "VR for Good",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "データとプライバシー",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "責任あるビジネス慣行",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "選挙",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Metaについて",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "採用情報",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "メディアギャラリー",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "ブランドリソース",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "投資家向け",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "ニュースルーム",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "コミュニティ規定",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "プライバシーポリシー",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "規約",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Cookieポリシー",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Facebookヘルプセンター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Messengerヘルプセンター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Instagramヘルプセンター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "WhatsAppヘルプセンター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Workplaceヘルプセンター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta認証",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Ray-Ban Metaグラス",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta Quest",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "アクセサリー",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "アプリとゲーム",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta Questギフトカード",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Ray-Banのその他の製品",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta for Work",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta for Education",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "ブログ",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Metaヘルプセンター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "注文ステータス",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "返品",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "製品デモを検索",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "認定販売代理店",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "法務",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "販売規約",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta Questセーフティセンター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "クリエイター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "開発者",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "ビジネス",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "非営利団体",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "SDKのダウンロード",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta専用製品パートナープログラム",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "VR for Good",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "データとプライバシー",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "責任あるビジネス慣行",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "選挙",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Metaについて",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "採用情報",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "メディアギャラリー",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "ブランドリソース",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "投資家向け",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "ニュースルーム",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "コミュニティ規定",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "プライバシーポリシー",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "規約",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Cookieポリシー",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Facebookヘルプセンター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Messengerヘルプセンター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Instagramヘルプセンター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "WhatsAppヘルプセンター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Workplaceヘルプセンター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta認証",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Ray-Ban Metaグラス",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta Quest",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "アクセサリー",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "アプリとゲーム",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta Questギフトカード",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Ray-Banのその他の製品",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta for Work",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta for Education",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "ブログ",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Metaヘルプセンター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "注文ステータス",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "返品",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "製品デモを検索",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "認定販売代理店",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "法務",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "販売規約",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta Questセーフティセンター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "クリエイター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "開発者",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "ビジネス",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "非営利団体",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "SDKのダウンロード",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta専用製品パートナープログラム",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "VR for Good",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "データとプライバシー",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "責任あるビジネス慣行",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "選挙",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Metaについて",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "採用情報",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "メディアギャラリー",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "ブランドリソース",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "投資家向け",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "ニュースルーム",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "コミュニティ規定",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "プライバシーポリシー",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "規約",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Cookieポリシー",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Facebookヘルプセンター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Messengerヘルプセンター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Instagramヘルプセンター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "WhatsAppヘルプセンター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Workplaceヘルプセンター",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          },
+          {
+            "text": "Meta認証",
+            "tagName": "span",
+            "className": "xbks1sj x17gzxuv x1rujz1s xm5vtmc x3voqp2 x658qfi x1wsgf3v xn1wy4v x1k03ns3 xpbi8i2 xh2n1af x1npfmwo xg94uf4 xrm2kyc xjprkx4 xawl3gl x12429cg x6tc29j xbq7h4v x6jdkww xq9mrsl"
+          }
+        ],
+        "images": [
+          {
+            "src": "https://static.xx.fbcdn.net/rsrc.php/y9/r/tL_v571NdZ0.svg",
+            "alt": "Meta",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/-PAXP-deijE.gif",
+            "alt": "Image announcing new WA updates from Conversations 2025",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/-PAXP-deijE.gif",
+            "alt": "Oakley Meta Glasses",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/-PAXP-deijE.gif",
+            "alt": "Illustration of passkey sign-in icons",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/-PAXP-deijE.gif",
+            "alt": "",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/-PAXP-deijE.gif",
+            "alt": "VRヘッドセットの画像",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/-PAXP-deijE.gif",
+            "alt": "",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/-PAXP-deijE.gif",
+            "alt": "",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/-PAXP-deijE.gif",
+            "alt": "2人の友達の画像",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/-PAXP-deijE.gif",
+            "alt": "友達グループの画像",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/-PAXP-deijE.gif",
+            "alt": "VRヘッドセットを装着している男性の画像",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/-PAXP-deijE.gif",
+            "alt": "",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://static.xx.fbcdn.net/rsrc.php/y9/r/tL_v571NdZ0.svg",
+            "alt": "Meta",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://scontent-nrt1-1.xx.fbcdn.net/v/t39.2365-6/425860105_925920989121941_6933048753023841367_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=aa6a2f&_nc_ohc=H084craZeNoQ7kNvwGJNK05&_nc_oc=AdkNhVhEy786EqfwvcKUoYLdxCDc8xHj0YH0fcneuUl41gXIp_Zfp0JK0BZsnx2YHzebZkfTBCl5TGI2nRpBYQh1&_nc_zt=14&_nc_ht=scontent-nrt1-1.xx&_nc_gid=xl7h4pILMcCH2uY1fNyiGw&oh=00_AfTYp618drQRFSG0gZDX0CqTrt2gFy4dFOHUX5WAfHcWXw&oe=687F0522",
+            "alt": "Facebook",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://scontent-nrt1-1.xx.fbcdn.net/v/t39.2365-6/426111639_1769160196937749_1255414493924977933_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=aa6a2f&_nc_ohc=c_7I-gveQ2QQ7kNvwEy68Xd&_nc_oc=Adm50X96MsXKKSWybNWebAO39IDe3xP2FoL-gm4EvAE9QKbZ7I_kvvJk0jl23BFBWDOHM4Ev_b2PwSotbx7eqLrE&_nc_zt=14&_nc_ht=scontent-nrt1-1.xx&_nc_gid=xl7h4pILMcCH2uY1fNyiGw&oh=00_AfQttipoiVZKXAZPJYJzYQtdRZPisjm3Co2anXCFfDzixg&oe=687EFFB9",
+            "alt": "Threads",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://scontent-nrt1-1.xx.fbcdn.net/v/t39.2365-6/425804778_757649995874129_6917476492193301523_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=aa6a2f&_nc_ohc=IHVjev7NTeMQ7kNvwHBAC_I&_nc_oc=Admi9mI21nr_EksnUMuA3zrlXFhKd9UXOrJk-9bbSv1SkrGK62X-EXRakzemZBjP6ULqDaQXrdB9k4Kwp3xA4fOf&_nc_zt=14&_nc_ht=scontent-nrt1-1.xx&_nc_gid=xl7h4pILMcCH2uY1fNyiGw&oh=00_AfS2xdHd1N6_OEeo65ar4M_HbgHiRI3Z22AQIn8LyPN1pQ&oe=687F2778",
+            "alt": "Instagram",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://scontent-nrt1-1.xx.fbcdn.net/v/t39.2365-6/426747931_385023204117867_5811151062540225287_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=aa6a2f&_nc_ohc=mo_NIhnDM8YQ7kNvwEsl-ep&_nc_oc=AdmJqF93JaYmtMUx0M_oLEzDfbmA_QfyahGFadIlwPBt3eTxxanMf9Mi1TGYJRkOXWKQ27yKS1wJWq6s10nEOTDm&_nc_zt=14&_nc_ht=scontent-nrt1-1.xx&_nc_gid=xl7h4pILMcCH2uY1fNyiGw&oh=00_AfRaW3YGxdcVLcEOZuCmdcX6-VxAqydfQIrS3TWW1LwR8w&oe=687F0DAA",
+            "alt": "X",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://scontent-nrt1-1.xx.fbcdn.net/v/t39.2365-6/425519002_724756916408357_7491658959807896355_n.svg?_nc_cat=1&ccb=1-7&_nc_sid=aa6a2f&_nc_ohc=CLYxMU9SbnUQ7kNvwFTNhgE&_nc_oc=AdnnKvkGzWd6OUV_BZZEyRt3XOPERqPJfJO6j5Q30vZuYQb3Wx_faBVdmw1eGLoF-_l9ItGgfUITdF0PeXfyvyBV&_nc_zt=14&_nc_ht=scontent-nrt1-1.xx&_nc_gid=xl7h4pILMcCH2uY1fNyiGw&oh=00_AfTL88leJdvrKqGkQciwDAcW7WaY78SMwnFlJMbkLqw19g&oe=687F085F",
+            "alt": "YouTube",
+            "title": null,
+            "width": null,
+            "height": null
+          }
+        ],
+        "custom": []
+      },
+      "links": [
+        "https://about.meta.com/",
+        "https://about.meta.com/ai-glasses/",
+        "https://about.meta.com/quest/",
+        "https://about.meta.com/experiences/?utm_content=53192",
+        "https://www.meta.com/ja-jp/about/",
+        "https://about.meta.com/help/",
+        "https://about.meta.com/bag/",
+        "https://about.meta.com/login/?next=https%3A%2F%2Fwww.meta.com%2Fja-jp%2Fabout%2F%3Futm_source%3Dabout.meta.com%26utm_medium%3Dredirect",
+        "https://www.meta.com/ja-jp/about/company-info/",
+        "https://www.meta.com/ja-jp/technologies/",
+        "https://l.facebook.com/l.php?u=https%3A%2F%2Fai.meta.com%2F%3Futm_source%3Dabout_meta_site%26utm_medium%3Dweb%26utm_content%3Dhero_homepage&h=AT3jf-g4NDkhWFP9yASAAJG20KWn8hqqx-9VrTADhXCor2nUOhPuRKMmkSFc7AWcaIFfisv3888a-LHZgGEEef4ssYfsIKmsrFOzs6hxcinGRCXtMtFPwUu7U7g5y67fa9xb66tzSreLpDz_QfWhUXogkI6_lJI9ukQeyQ",
+        "https://www.meta.com/ja-jp/actions/",
+        "https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2Fnews%2F&h=AT37Wao920JBOUUBBCBtUb11c9SntbSCppUQJT8XT7td9faYYd388-S57FvHWeXqLbwOhFRvaRxWZFTgv3k6s0_PG721aPcSNi0DKdEbapizXNR8O0jWQ7eCAQzp9hCqs1BPG9lNQ-0P409HSMo1bj-O01QVkw4OHIH2WQ",
+        "https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2Fnews%2F2025%2F07%2Fcentralized-campaigns-ai-support-businesses-whatsapp%2F&h=AT3SYugy0kgOBTk-K9E1PeYuJ5OK0nhVvW0hKnmWdwoXHjyqlgRxuuUMMCSi4Tjpdqg4Gd9vCsjRApdbR3V736gmReQb4_Dot5Uov5XKVz8JDTiwCRY-elaGq2MDjFuaLLjhn609rsG-7Ozq6Cxr_p6mNZwygpNgyip_dQ",
+        "https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2Fnews%2F2025%2F07%2Fcentralized-campaigns-ai-support-businesses-whatsapp%2F&h=AT0ViL20uhI4gghWc91tC0j9022_m-LoUsIp_ET325nEC8309OLV9ovQqc1-l_F_QQf0fegxXWDm8u4-J0O54ammTAgGDiYd9zs64w0-mS0q3g38_j1qSCGE1SBJ-WpOn-6ZTj9F45EgjQYBqkDdIJQyYZGuUo5GKHVJsw",
+        "https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2Fnews%2F2025%2F06%2Fintroducing-oakley-meta-glasses-a-new-category-of-performance-ai-glasses%2F&h=AT0stffpTwqMCJKq_IJFaKNlTVCIS_0hzdWLzvwJwu5jl2NmnFTcI5eZjSyLCwqzIlqUTzasLhCWpqqHo8ttS4lqUJqt6PnWpp_mnrzILwUfrgJ5H3h10KweP5AmYniB9H9A5HaNU3wLpFvBVGsYIk0b14CTduSj22K70w",
+        "https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2Fnews%2F2025%2F06%2Fintroducing-oakley-meta-glasses-a-new-category-of-performance-ai-glasses%2F&h=AT3wNPgBzbNwRrrJhzTlS-la6vDFpz_cut-NOm-TS2eStboYEqOUpyegKRRt4bjg2T-BnAIsU-v7MxP4hn1nh3iw50RTjice0ZpXmED3f1prlGTg-evdghICj7usU-CLEbzWzPz4EAXUHTmtBwxa2ZBdeuFFVQRz_AkrHw",
+        "https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2Fnews%2F2025%2F06%2Fintroducing-passkeys-facebook-easier-sign-in%2F&h=AT3gC_IgiGpevzaVn6LdpXy-Oydjjub8JIAUW_x98_Ik-Fx4iP5jjU93jUm3LYGoQaPAkX78a2evctaz02BhUKdznqI-kUQEu-DpuIimBgbBbIEHllR8nQ_6uM7UtwF9eRTPRobNDqOGuvQbdukV8DTZtzsyGcDRvi5zAg",
+        "https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2Fnews%2F2025%2F06%2Fintroducing-passkeys-facebook-easier-sign-in%2F&h=AT1S9NV986FJIw4IziGpSwPcYgiGvZTSCmzK0Zt8m_xLwQGv_odfN63KvAjryXVGR97PLEiFRFe345qOyvImYR_YFtQjkKHskTQj2iHPOeG8z88pghCbJwM8pKJzq66aLHNrbXAd02g8Ek6wGCgx_7_laRLJH4iRhdvQdg",
+        "https://www.meta.com/ai-glasses/shop-all/?utm_content=38629",
+        "https://www.meta.com/quest/quest-3s/?utm_content=64900",
+        "https://www.meta.com/help/?utm_content=15874",
+        "https://l.facebook.com/l.php?u=https%3A%2F%2Ftransparency.meta.com%2F&h=AT124VSVD5baXOOxwGCL3TYF7y_X1p7BsAQU75U8i9FkU9XILgEWyzupzwmwLqbgFsztq6hzvsY8tvctqjraVQbgvOzV4pJAU4cuwgAhhm7rNaW8K70SHzg9KKHn19YNwdtGHLquNAQtEJR5zr3PCU5P5cSY00TnUTBOgw",
+        "https://www.meta.com/ja-jp/actions/protecting-privacy-and-security/",
+        "https://www.meta.com/ja-jp/actions/responsible-innovation/",
+        "https://www.meta.com/ja-jp/media-gallery/executives/",
+        "https://www.facebook.com/Meta",
+        "https://www.threads.net/@meta",
+        "https://www.instagram.com/meta/",
+        "https://twitter.com/Meta",
+        "https://www.youtube.com/meta",
+        "https://about.meta.com/ai-glasses/shop-all/",
+        "https://about.meta.com/quest/accessories/",
+        "https://about.meta.com/experiences/",
+        "https://about.meta.com/quest/gift-cards/",
+        "https://rayban.com/",
+        "https://forwork.meta.com/",
+        "https://forwork.meta.com/meta-for-education/",
+        "https://about.meta.com/blog/",
+        "https://about.meta.com/order/find/",
+        "https://about.meta.com/returns/",
+        "https://about.meta.com/demo/",
+        "https://about.meta.com/retailers/",
+        "https://about.meta.com/legal/",
+        "https://about.meta.com/legal/terms-of-sale/",
+        "https://about.meta.com/quest/safety-center/",
+        "https://creator.oculus.com/",
+        "https://developers.meta.com/horizon/",
+        "https://www.facebook.com/business/ads/",
+        "https://www.facebook.com/government-nonprofits/best-practices/nonprofits/",
+        "https://developers.meta.com/horizon/downloads/unity/",
+        "https://about.meta.com/made-for-meta/",
+        "https://www.meta.com/ja-jp/community/vr-for-good/",
+        "https://www.meta.com/ja-jp/actions/responsible-business-practices/",
+        "https://www.meta.com/ja-jp/actions/preparing-for-elections-with-meta/",
+        "https://metacareers.com/",
+        "https://www.meta.com/ja-jp/media-gallery/",
+        "https://about.meta.com/ja/brand/resources/",
+        "https://investor.atmeta.com/home/default.aspx",
+        "https://about.fb.com/news/",
+        "https://transparency.meta.com/policies/community-standards/",
+        "https://about.meta.com/legal/privacy-policy/",
+        "https://www.facebook.com/terms.php/",
+        "https://www.facebook.com/privacy/policies/cookies/",
+        "https://www.facebook.com/help?ref=about.facebook.com",
+        "https://www.facebook.com/help/messenger-app/?ref=about.facebook.com",
+        "https://help.instagram.com/",
+        "https://faq.whatsapp.com/",
+        "https://www.facebook.com/help/work?ref=about.facebook.com",
+        "https://www.meta.com/ja-jp/meta-verified/"
+      ],
+      "timestamp": "2025-07-17T18:24:58.917Z",
+      "depth": 1
+    },
+    {
+      "url": "https://about.instagram.com/",
+      "title": "About Instagram | Capture, Create & Share What You Love",
+      "elements": {
+        "links": [
+          {
+            "text": "Home",
+            "href": "/",
+            "title": null
+          },
+          {
+            "text": "Our Features",
+            "href": "/features",
+            "title": null
+          },
+          {
+            "text": "Reels",
+            "href": "/features/reels",
+            "title": null
+          },
+          {
+            "text": "Stories",
+            "href": "/features/stories",
+            "title": null
+          },
+          {
+            "text": "DMs",
+            "href": "/features/direct",
+            "title": null
+          },
+          {
+            "text": "Search & Explore",
+            "href": "/features/search-and-explore",
+            "title": null
+          },
+          {
+            "text": "Overview",
+            "href": "/safety",
+            "title": null
+          },
+          {
+            "text": "Safety Tools",
+            "href": "/safety/account-safety",
+            "title": null
+          },
+          {
+            "text": "Privacy Tools",
+            "href": "/safety/privacy",
+            "title": null
+          },
+          {
+            "text": "Account Security",
+            "href": "/safety/account-security",
+            "title": null
+          },
+          {
+            "text": "Our Community",
+            "href": "/community",
+            "title": null
+          },
+          {
+            "text": "School Partnerships",
+            "href": "/community/educators",
+            "title": null
+          },
+          {
+            "text": "Teen Accounts",
+            "href": "/community/teen-accounts",
+            "title": null
+          },
+          {
+            "text": "Anti-Bullying",
+            "href": "/community/anti-bullying",
+            "title": null
+          },
+          {
+            "text": "Parents",
+            "href": "/community/parents",
+            "title": null
+          },
+          {
+            "text": "Programs",
+            "href": "/community/programs",
+            "title": null
+          },
+          {
+            "text": "Our Story",
+            "href": "/about-us",
+            "title": null
+          },
+          {
+            "text": "News",
+            "href": "/blog",
+            "title": null
+          },
+          {
+            "text": "Threads",
+            "href": "/threads",
+            "title": null
+          },
+          {
+            "text": "Edits",
+            "href": "https://www.edits.com/",
+            "title": null
+          },
+          {
+            "text": "ログイン",
+            "href": "https://www.instagram.com/accounts/login?next=https%3A%2F%2Fabout.instagram.com%2F",
+            "title": null
+          },
+          {
+            "text": "Community",
+            "href": "https://about.instagram.com/community/",
+            "title": null
+          },
+          {
+            "text": "Features",
+            "href": "https://about.instagram.com/features",
+            "title": null
+          },
+          {
+            "text": "Reels",
+            "href": "/features/reels",
+            "title": null
+          },
+          {
+            "text": "Stories",
+            "href": "https://about.instagram.com/features/stories",
+            "title": null
+          },
+          {
+            "text": "Messenger",
+            "href": "https://about.instagram.com/features/direct",
+            "title": null
+          },
+          {
+            "text": "Search & Explore",
+            "href": "https://about.instagram.com/features/search-and-explore",
+            "title": null
+          },
+          {
+            "text": "Features",
+            "href": "https://about.instagram.com/features",
+            "title": null
+          },
+          {
+            "text": "Reels",
+            "href": "/features/reels",
+            "title": null
+          },
+          {
+            "text": "Stories",
+            "href": "https://about.instagram.com/features/stories",
+            "title": null
+          },
+          {
+            "text": "Messenger",
+            "href": "https://about.instagram.com/features/direct",
+            "title": null
+          },
+          {
+            "text": "Search & Explore",
+            "href": "https://about.instagram.com/features/search-and-explore",
+            "title": null
+          },
+          {
+            "text": "Creators",
+            "href": "https://creators.instagram.com/",
+            "title": null
+          },
+          {
+            "text": "Business",
+            "href": "https://www.facebook.com/business/instagram",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://apps.apple.com/app/apple-store/id389801252?pt=428156&ct=AS-download_about-ig-homepage&mt=8",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://play.google.com/store/apps/details?id=com.instagram.android&utm_source=about-ig-homepage&utm_campaign=google-play",
+            "title": null
+          },
+          {
+            "text": "Our Story",
+            "href": "/about-us",
+            "title": null
+          },
+          {
+            "text": "Leadership",
+            "href": "https://about.meta.com/media-gallery/executives/",
+            "title": null
+          },
+          {
+            "text": "Brand",
+            "href": "/brand",
+            "title": null
+          },
+          {
+            "text": "Brand Kit",
+            "href": "https://about.meta.com/brand/resources/instagram/instagram-brand/",
+            "title": null
+          },
+          {
+            "text": "Working at Instagram",
+            "href": "/about-us/careers",
+            "title": null
+          },
+          {
+            "text": "Politics",
+            "href": "https://www.facebook.com/government-nonprofits/resources",
+            "title": null
+          },
+          {
+            "text": "Features",
+            "href": "/features",
+            "title": null
+          },
+          {
+            "text": "Reels",
+            "href": "/features/reels",
+            "title": null
+          },
+          {
+            "text": "Stories",
+            "href": "/features/stories",
+            "title": null
+          },
+          {
+            "text": "DMs",
+            "href": "/features/direct",
+            "title": null
+          },
+          {
+            "text": "Search & Explore",
+            "href": "/features/search-and-explore",
+            "title": null
+          },
+          {
+            "text": "Safety",
+            "href": "/safety",
+            "title": null
+          },
+          {
+            "text": "Safety Tools",
+            "href": "/safety/account-safety",
+            "title": null
+          },
+          {
+            "text": "Privacy Tools",
+            "href": "/safety/privacy",
+            "title": null
+          },
+          {
+            "text": "Account Security",
+            "href": "/safety/account-security",
+            "title": null
+          },
+          {
+            "text": "Community",
+            "href": "/community",
+            "title": null
+          },
+          {
+            "text": "School Partnerships",
+            "href": "/community/educators",
+            "title": null
+          },
+          {
+            "text": "Teen Accounts",
+            "href": "/community/teen-accounts",
+            "title": null
+          },
+          {
+            "text": "Anti-Bullying",
+            "href": "/community/anti-bullying",
+            "title": null
+          },
+          {
+            "text": "Parents",
+            "href": "/community/parents",
+            "title": null
+          },
+          {
+            "text": "Programs",
+            "href": "/community/programs",
+            "title": null
+          },
+          {
+            "text": "Threads",
+            "href": "/threads",
+            "title": null
+          },
+          {
+            "text": "Edits",
+            "href": "https://www.edits.com/",
+            "title": null
+          },
+          {
+            "text": "Business",
+            "href": "https://www.facebook.com/business/instagram",
+            "title": null
+          },
+          {
+            "text": "Creators",
+            "href": "https://creators.instagram.com/",
+            "title": null
+          },
+          {
+            "text": "News",
+            "href": "/blog",
+            "title": null
+          },
+          {
+            "text": "Meta",
+            "href": "https://about.meta.com/",
+            "title": null
+          },
+          {
+            "text": "Family Center",
+            "href": "https://familycenter.meta.com/",
+            "title": null
+          },
+          {
+            "text": "Help Center",
+            "href": "https://help.instagram.com/?ref=ig_about",
+            "title": null
+          },
+          {
+            "text": " /> ",
+            "href": "https://www.instagram.com/instagram",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://www.facebook.com/instagram",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://www.threads.net/@instagram",
+            "title": null
+          },
+          {
+            "text": " /> ",
+            "href": "https://www.youtube.com/instagram",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://twitter.com/instagram",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://www.linkedin.com/company/meta/",
+            "title": null
+          },
+          {
+            "text": "Our Story",
+            "href": "/about-us",
+            "title": null
+          },
+          {
+            "text": "Features",
+            "href": "/features",
+            "title": null
+          },
+          {
+            "text": "Safety",
+            "href": "/safety",
+            "title": null
+          },
+          {
+            "text": "News",
+            "href": "/blog",
+            "title": null
+          },
+          {
+            "text": "Meta",
+            "href": "https://about.meta.com/",
+            "title": null
+          },
+          {
+            "text": " /> ",
+            "href": "https://www.instagram.com/instagram",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://www.facebook.com/instagram",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://www.threads.net/@instagram",
+            "title": null
+          },
+          {
+            "text": " /> ",
+            "href": "https://www.youtube.com/instagram",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://twitter.com/instagram",
+            "title": null
+          },
+          {
+            "text": "",
+            "href": "https://www.linkedin.com/company/meta/",
+            "title": null
+          },
+          {
+            "text": "English (US)",
+            "href": "https://about.instagram.com/",
+            "title": null
+          },
+          {
+            "text": "Español",
+            "href": "https://about.instagram.com/es-la/",
+            "title": null
+          },
+          {
+            "text": "Français (France)",
+            "href": "https://about.instagram.com/fr-fr/",
+            "title": null
+          },
+          {
+            "text": "Português (Brasil)",
+            "href": "https://about.instagram.com/pt-br/",
+            "title": null
+          },
+          {
+            "text": "한국어",
+            "href": "https://about.instagram.com/ko-kr/",
+            "title": null
+          },
+          {
+            "text": "Deutsch",
+            "href": "https://about.instagram.com/de-de/",
+            "title": null
+          },
+          {
+            "text": "日本語",
+            "href": "https://about.instagram.com/ja-jp/",
+            "title": null
+          },
+          {
+            "text": "हिन्दी",
+            "href": "https://about.instagram.com/hi-in/",
+            "title": null
+          },
+          {
+            "text": "Italiano",
+            "href": "#",
+            "title": null
+          },
+          {
+            "text": "API",
+            "href": "https://developers.facebook.com/docs/instagram",
+            "title": null
+          },
+          {
+            "text": "Privacy",
+            "href": "https://www.instagram.com/legal/privacy/",
+            "title": null
+          },
+          {
+            "text": "Terms",
+            "href": "https://www.instagram.com/legal/terms/",
+            "title": null
+          },
+          {
+            "text": "Sitemap",
+            "href": "/sitemap",
+            "title": null
+          },
+          {
+            "text": "API",
+            "href": "https://developers.facebook.com/docs/instagram",
+            "title": null
+          },
+          {
+            "text": "Privacy",
+            "href": "https://www.instagram.com/legal/privacy/",
+            "title": null
+          },
+          {
+            "text": "Terms",
+            "href": "https://www.instagram.com/legal/terms/",
+            "title": null
+          },
+          {
+            "text": "Sitemap",
+            "href": "/sitemap",
+            "title": null
+          }
+        ],
+        "texts": [
+          {
+            "text": "サイト",
+            "tagName": "span",
+            "className": "accessible_elem"
+          },
+          {
+            "text": "ナビゲーションメニュー",
+            "tagName": "span",
+            "className": "accessible_elem"
+          },
+          {
+            "text": "ホームページに移動",
+            "tagName": "span",
+            "className": "_afhc"
+          },
+          {
+            "text": "Bringing youcloser to the people",
+            "tagName": "p",
+            "className": "_a8td _a6sv _a4kk"
+          },
+          {
+            "text": "and thingsyou love",
+            "tagName": "p",
+            "className": "_a8td _a6sv _a4kk"
+          },
+          {
+            "text": "and thingsyou love",
+            "tagName": "span",
+            "className": "_a6wh _a6wl"
+          },
+          {
+            "text": "We’re commited to fostering a safe and supportive community for everyone",
+            "tagName": "p",
+            "className": "_a8td _a6sv _a4kl _absa"
+          },
+          {
+            "text": "Community",
+            "tagName": "p",
+            "className": "_a88i"
+          },
+          {
+            "text": "Explore What’s New",
+            "tagName": "p",
+            "className": "_a8td _a6sv _a4km"
+          },
+          {
+            "text": "Our continuously evolving features empower you to express yourself in new ways.",
+            "tagName": "p",
+            "className": "_a8td _abs3"
+          },
+          {
+            "text": "Features",
+            "tagName": "p",
+            "className": "_a88i"
+          },
+          {
+            "text": "Discover Reels",
+            "tagName": "p",
+            "className": "_a8td _a6sv _a4km"
+          },
+          {
+            "text": "Create, share, and watch short, entertaining videos on Instagram.",
+            "tagName": "p",
+            "className": "_a8td _abs3"
+          },
+          {
+            "text": "Reels",
+            "tagName": "p",
+            "className": "_a88i"
+          },
+          {
+            "text": "Watch Stories",
+            "tagName": "p",
+            "className": "_a8td _a6sv _a4km"
+          },
+          {
+            "text": "Check out Stories and live videos from your favorite people.",
+            "tagName": "p",
+            "className": "_a8td _abs3"
+          },
+          {
+            "text": "Stories",
+            "tagName": "p",
+            "className": "_a88i"
+          },
+          {
+            "text": "Have a conversation",
+            "tagName": "p",
+            "className": "_a8td _a6sv _a4km"
+          },
+          {
+            "text": "Send messages, photos and videos to a friend or select group of people.",
+            "tagName": "p",
+            "className": "_a8td _abs3"
+          },
+          {
+            "text": "Messenger",
+            "tagName": "p",
+            "className": "_a88i"
+          },
+          {
+            "text": "Find something new",
+            "tagName": "p",
+            "className": "_a8td _a6sv _a4km"
+          },
+          {
+            "text": "Discover content and creators based on your interests.",
+            "tagName": "p",
+            "className": "_a8td _abs3"
+          },
+          {
+            "text": "Search & Explore",
+            "tagName": "p",
+            "className": "_a88i"
+          },
+          {
+            "text": "Explore",
+            "tagName": "span",
+            "className": "_ai_o"
+          },
+          {
+            "text": "Explore What’s New",
+            "tagName": "p",
+            "className": "_a8td _a6sv _a4km"
+          },
+          {
+            "text": "Our continuously evolving features empower you to express yourself in new ways.",
+            "tagName": "p",
+            "className": "_a8td _abs3"
+          },
+          {
+            "text": "Features",
+            "tagName": "p",
+            "className": "_a88i"
+          },
+          {
+            "text": "Discover Reels",
+            "tagName": "p",
+            "className": "_a8td _a6sv _a4km"
+          },
+          {
+            "text": "Create, share, and watch short, entertaining videos on Instagram.",
+            "tagName": "p",
+            "className": "_a8td _abs3"
+          },
+          {
+            "text": "Reels",
+            "tagName": "p",
+            "className": "_a88i"
+          },
+          {
+            "text": "Watch Stories",
+            "tagName": "p",
+            "className": "_a8td _a6sv _a4km"
+          },
+          {
+            "text": "Check out Stories and live videos from your favorite people.",
+            "tagName": "p",
+            "className": "_a8td _abs3"
+          },
+          {
+            "text": "Stories",
+            "tagName": "p",
+            "className": "_a88i"
+          },
+          {
+            "text": "Have a conversation",
+            "tagName": "p",
+            "className": "_a8td _a6sv _a4km"
+          },
+          {
+            "text": "Send messages, photos and videos to a friend or select group of people.",
+            "tagName": "p",
+            "className": "_a8td _abs3"
+          },
+          {
+            "text": "Messenger",
+            "tagName": "p",
+            "className": "_a88i"
+          },
+          {
+            "text": "Find something new",
+            "tagName": "p",
+            "className": "_a8td _a6sv _a4km"
+          },
+          {
+            "text": "Discover content and creators based on your interests.",
+            "tagName": "p",
+            "className": "_a8td _abs3"
+          },
+          {
+            "text": "Search & Explore",
+            "tagName": "p",
+            "className": "_a88i"
+          },
+          {
+            "text": "Explore",
+            "tagName": "span",
+            "className": "_ai_o"
+          },
+          {
+            "text": "Stand out on Instagram",
+            "tagName": "h2",
+            "className": "_a8td _a6sv _a4km"
+          },
+          {
+            "text": "Connect with more people, build influence, and create compelling content that’s distinctly yours.",
+            "tagName": "p",
+            "className": "_a8td _abs3"
+          },
+          {
+            "text": "Creators",
+            "tagName": "p",
+            "className": "_a88i"
+          },
+          {
+            "text": "Ourcommunity is evolving,",
+            "tagName": "p",
+            "className": "_a8td _a6sv _abs0 _a6wm"
+          },
+          {
+            "text": "Our",
+            "tagName": "span",
+            "className": "_a7mz _a88f"
+          },
+          {
+            "text": "Our",
+            "tagName": "span",
+            "className": "_a7m0 _a88f _a7ld"
+          },
+          {
+            "text": "community ",
+            "tagName": "span",
+            "className": "_a7mz _a88f"
+          },
+          {
+            "text": "community ",
+            "tagName": "span",
+            "className": "_a7m0 _a88f _a7ld"
+          },
+          {
+            "text": "is evolving,",
+            "tagName": "span",
+            "className": "_a7mz _a88f"
+          },
+          {
+            "text": "is evolving,",
+            "tagName": "span",
+            "className": "_a7m0 _a88f _a7ld"
+          },
+          {
+            "text": "so are we",
+            "tagName": "p",
+            "className": "_a8td _a6sv _abs0 _a6wm"
+          },
+          {
+            "text": "so are we",
+            "tagName": "span",
+            "className": "_a7mz _a88f"
+          },
+          {
+            "text": "so are we",
+            "tagName": "span",
+            "className": "_a7m0 _a88f _a7ld"
+          },
+          {
+            "text": "Grow with us",
+            "tagName": "h2",
+            "className": "_a8td _a6sv _a4km"
+          },
+          {
+            "text": "Share and grow your brand with our diverse, global community.",
+            "tagName": "p",
+            "className": "_a8td _abs3"
+          },
+          {
+            "text": "Business",
+            "tagName": "p",
+            "className": "_a88i"
+          },
+          {
+            "text": "Download for iOS/Android.",
+            "tagName": "p",
+            "className": "_a8td _a6sv _a4km _a4kh"
+          },
+          {
+            "text": " /> ",
+            "tagName": "span",
+            "className": "_abxv"
+          },
+          {
+            "text": " /> ",
+            "tagName": "span",
+            "className": "_abxv"
+          },
+          {
+            "text": " /> ",
+            "tagName": "span",
+            "className": "_abxv"
+          },
+          {
+            "text": " /> ",
+            "tagName": "span",
+            "className": "_abxv"
+          },
+          {
+            "text": "English (US)",
+            "tagName": "span",
+            "className": "_a96w"
+          },
+          {
+            "text": "English (US)",
+            "tagName": "span",
+            "className": "_8-vl _8-vr _a96v"
+          },
+          {
+            "text": "English (US)",
+            "tagName": "span",
+            "className": "_8-vl _8-vr _a96x _a96n _a96n"
+          },
+          {
+            "text": "Instagram from Meta",
+            "tagName": "span",
+            "className": "_a8uq"
+          }
+        ],
+        "images": [
+          {
+            "src": "/images/instagram/about/icons/small/close-btn-white-border.svg",
+            "alt": "",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "/images/instagram/about/nav-arrow.svg",
+            "alt": "",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "/images/instagram/about/nav-arrow.svg",
+            "alt": "",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "/images/instagram/about/nav-arrow.svg",
+            "alt": "",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "/images/instagram/about/icons/small/arrow-right-diagonal.svg",
+            "alt": "",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://lookaside.fbsbx.com/elementpath/media/?media_id=1515764255735341&version=1723113684",
+            "alt": "",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://scontent-nrt1-1.xx.fbcdn.net/v/t39.8562-6/387722956_7378458712178487_1775710954647878208_n.webp?_nc_cat=106&ccb=1-7&_nc_sid=f537c7&_nc_ohc=EHRXyTvr9eQQ7kNvwGO0cBm&_nc_oc=AdmAICOF96W1Og4dNDtN4acNQFW0WiUDbZvz6mdPbO0K4tgifo17wp73fVr1GnDtFhNOqYKOwJUMCumFi81v9FI-&_nc_zt=14&_nc_ht=scontent-nrt1-1.xx&_nc_gid=ZNNBFEocUG3XiI8OCl0L5A&oh=00_AfT7mY6m8nq-GWrD6iI17l9YrpAKIJ0ymPpTfMCfI5hWag&oe=687F1BE0",
+            "alt": "girl taking a photo with a tunnel filter",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://scontent-nrt1-1.xx.fbcdn.net/v/t39.8562-6/387146343_617196437155293_2327283482117678195_n.webp?_nc_cat=108&ccb=1-7&_nc_sid=f537c7&_nc_ohc=BWTCVsPqvF0Q7kNvwGLZSP5&_nc_oc=Adl0-Y4vp1JK4oEpgUjot5vEWKnwwbfZMx78hmbu65qT2UNg9C9-eQKkSPYS-Xpk_IVQcN3aGnMbu3xZwrNf4qbk&_nc_zt=14&_nc_ht=scontent-nrt1-1.xx&_nc_gid=ZNNBFEocUG3XiI8OCl0L5A&oh=00_AfTM70kWWa0N2uLYrREA_LS7Q_Hu_YOT7Hu0dHcHpviRmA&oe=687F02D2",
+            "alt": "guy taking a photo with food",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://scontent-nrt1-2.xx.fbcdn.net/v/t39.8562-6/387023156_1104464300996226_7201133512768708808_n.webp?_nc_cat=102&ccb=1-7&_nc_sid=f537c7&_nc_ohc=QohIW8resKYQ7kNvwHlq1ZH&_nc_oc=AdkKIyBUkquVBSeZS3hBg_w0DgYfv6EW6R_coKSvRtzFweMk5CVyAJqEmxnAsg5r516ynZEGvwAr8-W89zTHL0mc&_nc_zt=14&_nc_ht=scontent-nrt1-2.xx&_nc_gid=ZNNBFEocUG3XiI8OCl0L5A&oh=00_AfSutSXvGRZwkbo_EQ5ktofJ_ktpSvvHCIGEJzGZq8f9nA&oe=687F03CC",
+            "alt": "three girls taking a photo from above",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://scontent-nrt1-2.xx.fbcdn.net/v/t39.8562-6/387041588_1173432146946550_7707432751021130960_n.webp?_nc_cat=110&ccb=1-7&_nc_sid=f537c7&_nc_ohc=wIKDkiqU5m0Q7kNvwHEOlHj&_nc_oc=Adk4MMHq1L1YYHjW7SC9YmbBwqBZL-BzHGe1kuxi2qvOeGLKf2Ti34Cyl5a-7CFUCZPZmEDqsFZyfsStN6UnfU96&_nc_zt=14&_nc_ht=scontent-nrt1-2.xx&_nc_gid=ZNNBFEocUG3XiI8OCl0L5A&oh=00_AfTmmNxVqxDtPwE9udu4Ht5tkQG4vJMYcdbt8uohO0vb6Q&oe=687F203B",
+            "alt": "two girls taking silly photos from below",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://scontent-nrt1-2.xx.fbcdn.net/v/t39.8562-6/423249259_249680278081136_5738188525411020346_n.webp?_nc_cat=102&ccb=1-7&_nc_sid=f537c7&_nc_ohc=eRLG3GaOAqMQ7kNvwGNQv__&_nc_oc=AdnAdc33QE9NFBbSUSjE4iE2MyP2EzX1rQMY80-9dzptHa1-VKVt9ylEwjnLLx6H4r-Ugral1Gu2d2Da8UyTJvt0&_nc_zt=14&_nc_ht=scontent-nrt1-2.xx&_nc_gid=ZNNBFEocUG3XiI8OCl0L5A&oh=00_AfSOES9B4mBB0X7FQk4VPrpFCQBqT1y7z7wr_iRxM2mcSg&oe=687F07CE",
+            "alt": "",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://scontent-nrt1-1.xx.fbcdn.net/v/t39.8562-6/243008086_935278497334094_7414812871855775287_n.png?_nc_cat=109&ccb=1-7&_nc_sid=f537c7&_nc_ohc=yjDvNIOh09wQ7kNvwErj0JW&_nc_oc=AdmiTZH8a0oGEog0mCZ1GnIO_tjXZ8BJEaM1kGz20xBAZtG7lK5X0xQYuYnitaJn9SR8UNu77NZ8jrFFkzXRaF_C&_nc_zt=14&_nc_ht=scontent-nrt1-1.xx&_nc_gid=ZNNBFEocUG3XiI8OCl0L5A&oh=00_AfQ4vaE7hKZuKnofaBUAvp2rS1PczKf4UcOA273dhMDU2A&oe=687EFF4A",
+            "alt": "Collection of posts in search & explore",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://scontent-nrt1-2.xx.fbcdn.net/v/t39.8562-6/423249259_249680278081136_5738188525411020346_n.webp?_nc_cat=102&ccb=1-7&_nc_sid=f537c7&_nc_ohc=eRLG3GaOAqMQ7kNvwGNQv__&_nc_oc=AdnAdc33QE9NFBbSUSjE4iE2MyP2EzX1rQMY80-9dzptHa1-VKVt9ylEwjnLLx6H4r-Ugral1Gu2d2Da8UyTJvt0&_nc_zt=14&_nc_ht=scontent-nrt1-2.xx&_nc_gid=ZNNBFEocUG3XiI8OCl0L5A&oh=00_AfSOES9B4mBB0X7FQk4VPrpFCQBqT1y7z7wr_iRxM2mcSg&oe=687F07CE",
+            "alt": "",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://scontent-nrt1-1.xx.fbcdn.net/v/t39.8562-6/243008086_935278497334094_7414812871855775287_n.png?_nc_cat=109&ccb=1-7&_nc_sid=f537c7&_nc_ohc=yjDvNIOh09wQ7kNvwErj0JW&_nc_oc=AdmiTZH8a0oGEog0mCZ1GnIO_tjXZ8BJEaM1kGz20xBAZtG7lK5X0xQYuYnitaJn9SR8UNu77NZ8jrFFkzXRaF_C&_nc_zt=14&_nc_ht=scontent-nrt1-1.xx&_nc_gid=ZNNBFEocUG3XiI8OCl0L5A&oh=00_AfQ4vaE7hKZuKnofaBUAvp2rS1PczKf4UcOA273dhMDU2A&oe=687EFF4A",
+            "alt": "Collection of posts in search & explore",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://scontent-nrt1-2.xx.fbcdn.net/v/t39.8562-6/387141495_309266515074865_8242557347739797512_n.webp?_nc_cat=101&ccb=1-7&_nc_sid=f537c7&_nc_ohc=mR_UCoESMm4Q7kNvwGc8r8n&_nc_oc=Adl3QOZW1kDIdFqrGXVwoKVe0KnNKnsDhjG9qzEkQmt43EHdxKWgd83aNLly6JYen6b9TGQcjXSwgy7H6mbkNgy7&_nc_zt=14&_nc_ht=scontent-nrt1-2.xx&_nc_gid=ZNNBFEocUG3XiI8OCl0L5A&oh=00_AfTxVD6w0wKSJgG4o9dW_WdqTUoU0x7SXRb6ro_SQdpHUA&oe=687F211D",
+            "alt": "girl taking a silly photo with a towel on her hand",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://scontent-nrt1-1.xx.fbcdn.net/v/t39.8562-6/387829639_1053743439392583_5072324479858934253_n.webp?_nc_cat=111&ccb=1-7&_nc_sid=f537c7&_nc_ohc=qhf-mUuEm1AQ7kNvwE5iP7z&_nc_oc=AdnAGgoQgHxG8Fg9CW7L0DKxbNmuR3JATfS1wZteaeUCTrWVvubVDH0GI4NL_mnCEaV1HAdCloGS8N-KARK1KYHO&_nc_zt=14&_nc_ht=scontent-nrt1-1.xx&_nc_gid=ZNNBFEocUG3XiI8OCl0L5A&oh=00_AfQXL308aNRlQs4z2muFu64wob5fWK-fTFU5r8iSPZd2mA&oe=687F1623",
+            "alt": "guy taking a photo with a cowboy hat",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/-PAXP-deijE.gif",
+            "alt": "Individual wearing gold-pearl-hoop-earring and smiling",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://lookaside.fbsbx.com/elementpath/media/?media_id=206316133833251&version=1748541265",
+            "alt": "Download on the App Store",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://lookaside.fbsbx.com/elementpath/media/?media_id=7351380591656463&version=1748541265",
+            "alt": "Get it on Google Play",
+            "title": null,
+            "width": "160",
+            "height": "48"
+          },
+          {
+            "src": "https://static.xx.fbcdn.net/rsrc.php/yP/r/H1UG-qQTNS8.svg",
+            "alt": "",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://static.xx.fbcdn.net/rsrc.php/yP/r/H1UG-qQTNS8.svg",
+            "alt": "",
+            "title": null,
+            "width": null,
+            "height": null
+          },
+          {
+            "src": "https://static.xx.fbcdn.net/rsrc.php/yP/r/H1UG-qQTNS8.svg",
+            "alt": "",
+            "title": null,
+            "width": null,
+            "height": null
+          }
+        ],
+        "custom": []
+      },
+      "links": [
+        "https://about.instagram.com/",
+        "https://about.instagram.com/features",
+        "https://about.instagram.com/features/reels",
+        "https://about.instagram.com/features/stories",
+        "https://about.instagram.com/features/direct",
+        "https://about.instagram.com/features/search-and-explore",
+        "https://about.instagram.com/safety",
+        "https://about.instagram.com/safety/account-safety",
+        "https://about.instagram.com/safety/privacy",
+        "https://about.instagram.com/safety/account-security",
+        "https://about.instagram.com/community",
+        "https://about.instagram.com/community/educators",
+        "https://about.instagram.com/community/teen-accounts",
+        "https://about.instagram.com/community/anti-bullying",
+        "https://about.instagram.com/community/parents",
+        "https://about.instagram.com/community/programs",
+        "https://about.instagram.com/about-us",
+        "https://about.instagram.com/blog",
+        "https://about.instagram.com/threads",
+        "https://www.edits.com/",
+        "https://www.instagram.com/accounts/login?next=https%3A%2F%2Fabout.instagram.com%2F",
+        "https://about.instagram.com/community/",
+        "https://creators.instagram.com/",
+        "https://www.facebook.com/business/instagram",
+        "https://apps.apple.com/app/apple-store/id389801252?pt=428156&ct=AS-download_about-ig-homepage&mt=8",
+        "https://play.google.com/store/apps/details?id=com.instagram.android&utm_source=about-ig-homepage&utm_campaign=google-play",
+        "https://about.meta.com/media-gallery/executives/",
+        "https://about.instagram.com/brand",
+        "https://about.meta.com/brand/resources/instagram/instagram-brand/",
+        "https://about.instagram.com/about-us/careers",
+        "https://www.facebook.com/government-nonprofits/resources",
+        "https://about.meta.com/",
+        "https://familycenter.meta.com/",
+        "https://help.instagram.com/?ref=ig_about",
+        "https://www.instagram.com/instagram",
+        "https://www.facebook.com/instagram",
+        "https://www.threads.net/@instagram",
+        "https://www.youtube.com/instagram",
+        "https://twitter.com/instagram",
+        "https://www.linkedin.com/company/meta/",
+        "https://about.instagram.com/es-la/",
+        "https://about.instagram.com/fr-fr/",
+        "https://about.instagram.com/pt-br/",
+        "https://about.instagram.com/ko-kr/",
+        "https://about.instagram.com/de-de/",
+        "https://about.instagram.com/ja-jp/",
+        "https://about.instagram.com/hi-in/",
+        "https://developers.facebook.com/docs/instagram",
+        "https://www.instagram.com/legal/privacy/",
+        "https://www.instagram.com/legal/terms/",
+        "https://about.instagram.com/sitemap"
+      ],
+      "timestamp": "2025-07-17T18:25:03.885Z",
+      "depth": 1
+    }
+  ]
+}

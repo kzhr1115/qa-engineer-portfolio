@@ -1,0 +1,33 @@
+{
+  "totalPages": 0,
+  "totalUrls": 1,
+  "startUrl": "https://www.instagram.com/",
+  "scrapedAt": "2025-07-17T18:40:06.511Z",
+  "config": {
+    "maxDepth": 2,
+    "maxPages": 20,
+    "selectors": {
+      "links": "a[href]",
+      "texts": "h1, h2, h3, span, p, div[class*=\"text\"]",
+      "images": "img",
+      "custom": {
+        "posts": "article",
+        "usernames": "a[href*=\"/\"]",
+        "stories": "[data-testid=\"story\"]",
+        "feed": "[data-testid=\"post\"]",
+        "profileInfo": "[data-testid=\"user-avatar\"]",
+        "followButtons": "button:has-text(\"Follow\")",
+        "likeButtons": "[aria-label*=\"Like\"]",
+        "commentSections": "[data-testid=\"comment\"]",
+        "captions": "[data-testid=\"post-caption\"]",
+        "hashtags": "a[href*=\"/explore/tags/\"]",
+        "mentions": "a[href*=\"/\"][href^=\"/\"]"
+      }
+    },
+    "outputFile": "manual_instagram_scrape.json",
+    "startUrl": "https://www.instagram.com/",
+    "manualMode": true,
+    "manualTimeout": 30000
+  },
+  "data": []
+}

@@ -477,11 +477,89 @@ function initScrollStory() {
     updateStoryStep();
 }
 
+// New scroll story implementation
+function initScrollStoryNew() {
+    const scrollSteps = document.querySelectorAll('.scroll-step');
+    if (scrollSteps.length === 0) return;
+    
+    // Show first step initially
+    scrollSteps[0].classList.add('visible');
+    
+    function checkScrollSteps() {
+        scrollSteps.forEach(step => {
+            const rect = step.getBoundingClientRect();
+            const isVisible = rect.top < window.innerHeight * 0.8 && rect.bottom > window.innerHeight * 0.2;
+            
+            if (isVisible) {
+                step.classList.add('visible');
+                
+                // Trigger specific animations for each step
+                if (step.id === 'step-stats') {
+                    const statCards = step.querySelectorAll('.stat-card');
+                    statCards.forEach((card, index) => {
+                        setTimeout(() => {
+                            card.style.animationPlayState = 'running';
+                        }, index * 200);
+                    });
+                }
+                
+                if (step.id === 'step-code') {
+                    const codeBlock = step.querySelector('.code-block-animated');
+                    if (codeBlock) {
+                        codeBlock.style.animationPlayState = 'running';
+                        
+                        const codeLines = step.querySelectorAll('.code-line');
+                        codeLines.forEach((line, index) => {
+                            setTimeout(() => {
+                                line.style.animationPlayState = 'running';
+                            }, index * 200);
+                        });
+                    }
+                }
+            }
+        });
+    }
+    
+    // Smooth scroll control
+    let isScrolling = false;
+    function handleSmoothScroll(e) {
+        const aboutSection = document.querySelector('.scroll-story-section');
+        if (!aboutSection) return;
+        
+        const rect = aboutSection.getBoundingClientRect();
+        const inSection = rect.top < window.innerHeight && rect.bottom > 0;
+        
+        if (inSection && !isScrolling) {
+            e.preventDefault();
+            isScrolling = true;
+            
+            const scrollAmount = e.deltaY * 0.6; // Slower scroll
+            const newScrollY = window.scrollY + scrollAmount;
+            
+            window.scrollTo({
+                top: newScrollY,
+                behavior: 'smooth'
+            });
+            
+            setTimeout(() => {
+                isScrolling = false;
+            }, 50);
+        }
+    }
+    
+    // Event listeners
+    window.addEventListener('scroll', checkScrollSteps);
+    window.addEventListener('wheel', handleSmoothScroll, { passive: false });
+    
+    // Initial check
+    checkScrollSteps();
+}
+
 // Enhanced floating animation for stats
 function enhanceFloatingElements() {
     const floatingElements = document.querySelectorAll('.floating-element');
     
-    floatingElements.forEach((element, index) => {
+    floatingElements.forEach((element) => {
         const handleMouseMove = (e) => {
             const rect = element.getBoundingClientRect();
             const x = e.clientX - rect.left - rect.width / 2;
@@ -514,7 +592,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addHoverEffects();
     navbarScrollEffect();
     initProjectsSlider();
-    // initScrollStory(); // Disabled for now
+    initScrollStoryNew();
     enhanceFloatingElements();
     
     // Delay typing effect to let page load

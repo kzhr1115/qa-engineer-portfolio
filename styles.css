@@ -449,7 +449,8 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    min-width: 50%;
+    min-width: 100%;
+    flex-shrink: 0;
 }
 
 .projects-navigation {

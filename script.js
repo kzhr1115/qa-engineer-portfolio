@@ -286,7 +286,7 @@ function initProjectsSlider() {
     const totalSlides = 2;
     
     function updateSlider() {
-        const translateX = -currentSlide * 50;
+        const translateX = -currentSlide * 100;
         projectsGrid.style.transform = `translateX(${translateX}%)`;
         
         // Update indicators

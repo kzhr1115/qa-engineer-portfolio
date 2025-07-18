@@ -49,57 +49,67 @@
     </header>
 
     <main>
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title">ABOUT ME</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>QAエンジニアとして、品質保証の最前線で活動しています。</p>
-                        <p>自動化テスト、手動テスト、パフォーマンステストなど、様々なテスト手法を駆使してソフトウェアの品質向上に貢献しています。</p>
-                        <div class="stats">
-                            <div class="stat">
-                                <span class="stat-number">10+</span>
-                                <span class="stat-label">Years Experience</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">100+</span>
-                                <span class="stat-label">Projects Tested</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">1000+</span>
-                                <span class="stat-label">Bugs Found</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-visual">
-                        <div class="code-block">
-                            <div class="code-header">
-                                <span>test-automation.js</span>
-                            </div>
-                            <div class="code-content">
-                                <div class="code-line">
-                                    <span class="keyword">describe</span>('User Login', () => {
-                                </div>
-                                <div class="code-line">
-                                    <span class="keyword">  it</span>('should login successfully', <span class="keyword">async</span> () => {
-                                </div>
-                                <div class="code-line">
-                                    <span class="keyword">    await</span> page.fill('#username', 'testuser');
-                                </div>
-                                <div class="code-line">
-                                    <span class="keyword">    await</span> page.fill('#password', 'password');
-                                </div>
-                                <div class="code-line">
-                                    <span class="keyword">    await</span> page.click('#login-btn');
-                                </div>
-                                <div class="code-line">
-                                    <span class="keyword">    expect</span>(page).toHaveURL('/dashboard');
-                                </div>
-                                <div class="code-line">
-                                    });
-                                </div>
-                                <div class="code-line">
-                                    });
+        <section id="about" class="section scroll-animation">
+            <div class="scroll-trigger">
+                <div class="container">
+                    <div class="parallax-container">
+                        <div class="parallax-layer parallax-bg"></div>
+                        <div class="parallax-layer parallax-mid"></div>
+                        <div class="parallax-layer parallax-front">
+                            <div class="scroll-content">
+                                <h2 class="section-title">ABOUT ME</h2>
+                                <div class="about-content">
+                                    <div class="about-text">
+                                        <p>QAエンジニアとして、品質保証の最前線で活動しています。</p>
+                                        <p>自動化テスト、手動テスト、パフォーマンステストなど、様々なテスト手法を駆使してソフトウェアの品質向上に貢献しています。</p>
+                                        <div class="stats">
+                                            <div class="stat floating-element">
+                                                <span class="stat-number">10+</span>
+                                                <span class="stat-label">Years Experience</span>
+                                            </div>
+                                            <div class="stat floating-element">
+                                                <span class="stat-number">100+</span>
+                                                <span class="stat-label">Projects Tested</span>
+                                            </div>
+                                            <div class="stat floating-element">
+                                                <span class="stat-number">1000+</span>
+                                                <span class="stat-label">Bugs Found</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="about-visual">
+                                        <div class="code-block scroll-element">
+                                            <div class="code-header">
+                                                <span>test-automation.js</span>
+                                            </div>
+                                            <div class="code-content">
+                                                <div class="code-line">
+                                                    <span class="keyword">describe</span>('User Login', () => {
+                                                </div>
+                                                <div class="code-line">
+                                                    <span class="keyword">  it</span>('should login successfully', <span class="keyword">async</span> () => {
+                                                </div>
+                                                <div class="code-line">
+                                                    <span class="keyword">    await</span> page.fill('#username', 'testuser');
+                                                </div>
+                                                <div class="code-line">
+                                                    <span class="keyword">    await</span> page.fill('#password', 'password');
+                                                </div>
+                                                <div class="code-line">
+                                                    <span class="keyword">    await</span> page.click('#login-btn');
+                                                </div>
+                                                <div class="code-line">
+                                                    <span class="keyword">    expect</span>(page).toHaveURL('/dashboard');
+                                                </div>
+                                                <div class="code-line">
+                                                    });
+                                                </div>
+                                                <div class="code-line">
+                                                    });
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

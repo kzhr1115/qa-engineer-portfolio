@@ -401,6 +401,155 @@ function initProjectsSlider() {
     projectsGrid.style.cursor = 'grab';
 }
 
+// Apple-style scroll animations
+function initScrollAnimations() {
+    const scrollSections = document.querySelectorAll('.scroll-animation');
+    const scrollElements = document.querySelectorAll('.scroll-element');
+    const scrollContents = document.querySelectorAll('.scroll-content');
+    
+    function updateScrollAnimations() {
+        scrollSections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            const sectionHeight = section.offsetHeight;
+            const viewportHeight = window.innerHeight;
+            
+            // Calculate scroll progress (0 to 1)
+            const scrollProgress = Math.max(0, Math.min(1, 
+                (viewportHeight - rect.top) / (viewportHeight + sectionHeight)
+            ));
+            
+            // Apply scroll-based transformations
+            const trigger = section.querySelector('.scroll-trigger');
+            if (trigger) {
+                const elements = trigger.querySelectorAll('.scroll-element');
+                elements.forEach((element, index) => {
+                    const delay = index * 0.1;
+                    const progress = Math.max(0, Math.min(1, scrollProgress - delay));
+                    
+                    // Parallax movement
+                    const translateY = -progress * 100;
+                    const rotateX = progress * 15;
+                    const scale = 0.8 + progress * 0.2;
+                    
+                    element.style.transform = `translateY(${translateY}px) rotateX(${rotateX}deg) scale(${scale})`;
+                    element.style.opacity = progress;
+                });
+                
+                // Background parallax
+                const bgLayer = trigger.querySelector('.parallax-bg');
+                const midLayer = trigger.querySelector('.parallax-mid');
+                
+                if (bgLayer) {
+                    const bgY = scrollProgress * 50;
+                    bgLayer.style.transform = `translateY(${bgY}px)`;
+                }
+                
+                if (midLayer) {
+                    const midY = scrollProgress * 25;
+                    midLayer.style.transform = `translateY(${midY}px)`;
+                }
+            }
+        });
+        
+        // Scroll content visibility
+        scrollContents.forEach(content => {
+            const rect = content.getBoundingClientRect();
+            const isVisible = rect.top < window.innerHeight * 0.8 && rect.bottom > window.innerHeight * 0.2;
+            
+            if (isVisible) {
+                content.classList.add('visible');
+            }
+        });
+    }
+    
+    // Smooth scroll control
+    let isScrolling = false;
+    let scrollTimeout;
+    
+    function handleScrollControl() {
+        if (isScrolling) return;
+        
+        const scrollSections = document.querySelectorAll('.scroll-animation');
+        scrollSections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            
+            // If section is partially visible, control scroll speed
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                const scrollProgress = (window.innerHeight - rect.top) / (window.innerHeight + section.offsetHeight);
+                
+                // Slow down scroll in the middle of the section
+                if (scrollProgress > 0.2 && scrollProgress < 0.8) {
+                    document.body.style.overflow = 'hidden';
+                    
+                    clearTimeout(scrollTimeout);
+                    scrollTimeout = setTimeout(() => {
+                        document.body.style.overflow = 'auto';
+                    }, 1000);
+                }
+            }
+        });
+    }
+    
+    // Wheel event for scroll control
+    window.addEventListener('wheel', (e) => {
+        const scrollSections = document.querySelectorAll('.scroll-animation');
+        let inScrollSection = false;
+        
+        scrollSections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                inScrollSection = true;
+                
+                // Custom scroll behavior
+                e.preventDefault();
+                
+                const scrollAmount = e.deltaY * 0.5; // Slower scroll
+                const newScrollY = window.scrollY + scrollAmount;
+                
+                // Smooth scroll
+                window.scrollTo({
+                    top: newScrollY,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    }, { passive: false });
+    
+    // Update on scroll
+    window.addEventListener('scroll', () => {
+        updateScrollAnimations();
+        handleScrollControl();
+    });
+    
+    // Initial update
+    updateScrollAnimations();
+}
+
+// Enhanced floating animation for stats
+function enhanceFloatingElements() {
+    const floatingElements = document.querySelectorAll('.floating-element');
+    
+    floatingElements.forEach((element, index) => {
+        const handleMouseMove = (e) => {
+            const rect = element.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            
+            const rotateX = (y / rect.height) * 20;
+            const rotateY = (x / rect.width) * 20;
+            
+            element.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(20px)`;
+        };
+        
+        const handleMouseLeave = () => {
+            element.style.transform = 'rotateX(0deg) rotateY(0deg) translateZ(0px)';
+        };
+        
+        element.addEventListener('mousemove', handleMouseMove);
+        element.addEventListener('mouseleave', handleMouseLeave);
+    });
+}
+
 // Initialize all effects
 document.addEventListener('DOMContentLoaded', () => {
     createGlitchEffect();
@@ -413,6 +562,8 @@ document.addEventListener('DOMContentLoaded', () => {
     addHoverEffects();
     navbarScrollEffect();
     initProjectsSlider();
+    initScrollAnimations();
+    enhanceFloatingElements();
     
     // Delay typing effect to let page load
     setTimeout(typeCode, 2000);

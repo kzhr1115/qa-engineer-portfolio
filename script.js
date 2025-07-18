@@ -494,13 +494,20 @@ function initScrollStoryNew() {
                 step.classList.add('visible');
                 
                 // Trigger specific animations for each step
-                if (step.id === 'step-stats') {
-                    const statCards = step.querySelectorAll('.stat-card');
-                    statCards.forEach((card, index) => {
-                        setTimeout(() => {
-                            card.style.animationPlayState = 'running';
-                        }, index * 200);
-                    });
+                if (step.id === 'step-experience' || step.id === 'step-projects' || step.id === 'step-bugs') {
+                    const statNumber = step.querySelector('.stat-number-huge');
+                    const statLabel = step.querySelector('.stat-label-huge');
+                    const statSubtitle = step.querySelector('.stat-subtitle');
+                    
+                    if (statNumber) {
+                        statNumber.style.animationPlayState = 'running';
+                    }
+                    if (statLabel) {
+                        statLabel.style.animationPlayState = 'running';
+                    }
+                    if (statSubtitle) {
+                        statSubtitle.style.animationPlayState = 'running';
+                    }
                 }
                 
                 if (step.id === 'step-code') {

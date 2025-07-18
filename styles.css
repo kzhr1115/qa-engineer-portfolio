@@ -299,43 +299,49 @@ body {
     padding: 0 20px;
 }
 
-/* Step 1: Experience Hero */
-.experience-hero {
+/* Stat Hero Components */
+.stat-hero {
     text-align: center;
     position: relative;
 }
 
-.experience-number {
-    font-size: clamp(10rem, 20vw, 25rem);
+.stat-number-huge {
+    font-size: clamp(12rem, 25vw, 30rem);
     font-weight: 900;
     color: #00ffff;
-    text-shadow: 0 0 50px rgba(0, 255, 255, 0.8);
+    text-shadow: 0 0 60px rgba(0, 255, 255, 0.8);
     display: inline-block;
     animation: pulse 2s ease-in-out infinite;
+    line-height: 0.8;
 }
 
-.experience-plus {
-    font-size: clamp(6rem, 12vw, 15rem);
+.stat-plus {
+    font-size: clamp(8rem, 15vw, 20rem);
     font-weight: 900;
     color: #ffffff;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 20px;
     animation: float 3s ease-in-out infinite;
+    line-height: 0.8;
 }
 
-.experience-label {
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
+.stat-label-huge {
+    font-size: clamp(2rem, 4vw, 3rem);
     color: #ffffff;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin: 40px 0 20px 0;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards 0.5s;
 }
 
-.experience-subtitle {
-    font-size: clamp(1rem, 2vw, 1.5rem);
+.stat-subtitle {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
     color: #cccccc;
     font-weight: 300;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards 1s;
 }
 
 /* Step 2: About Text */
@@ -520,16 +526,28 @@ body {
 
 /* Responsive Design for Story */
 @media (max-width: 768px) {
-    .stats-showcase {
+    .stats-grid {
         grid-template-columns: 1fr;
         gap: 30px;
     }
     
-    .experience-number {
+    .stat-number-huge {
         font-size: 10rem;
     }
     
-    .code-block-large {
+    .stat-plus {
+        font-size: 6rem;
+    }
+    
+    .stat-label-huge {
+        font-size: 1.5rem;
+    }
+    
+    .stat-subtitle {
+        font-size: 1rem;
+    }
+    
+    .code-block-animated {
         transform: none;
     }
 }

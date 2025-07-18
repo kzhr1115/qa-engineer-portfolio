@@ -514,7 +514,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addHoverEffects();
     navbarScrollEffect();
     initProjectsSlider();
-    initScrollStory();
+    // initScrollStory(); // Disabled for now
     enhanceFloatingElements();
     
     // Delay typing effect to let page load

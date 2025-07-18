@@ -311,8 +311,10 @@ body {
     color: #00ffff;
     text-shadow: 0 0 60px rgba(0, 255, 255, 0.8);
     display: inline-block;
-    animation: pulse 2s ease-in-out infinite;
     line-height: 0.8;
+    opacity: 0;
+    transform: scale(0.5);
+    animation-fill-mode: forwards;
 }
 
 .stat-plus {
@@ -321,8 +323,10 @@ body {
     color: #ffffff;
     display: inline-block;
     margin-left: 20px;
-    animation: float 3s ease-in-out infinite;
     line-height: 0.8;
+    opacity: 0;
+    transform: translateY(50px);
+    animation-fill-mode: forwards;
 }
 
 .stat-label-huge {
@@ -333,7 +337,8 @@ body {
     text-transform: uppercase;
     letter-spacing: 4px;
     opacity: 0;
-    animation: fadeInUp 1s ease forwards 0.5s;
+    transform: translateY(30px);
+    animation-fill-mode: forwards;
 }
 
 .stat-subtitle {
@@ -341,7 +346,25 @@ body {
     color: #cccccc;
     font-weight: 300;
     opacity: 0;
+    transform: translateY(30px);
+    animation-fill-mode: forwards;
+}
+
+/* Animated states */
+.stat-number-huge.animate {
+    animation: numberAppear 1s ease forwards, pulse 2s ease-in-out infinite 1s;
+}
+
+.stat-plus.animate {
+    animation: plusAppear 0.8s ease forwards 0.5s, float 3s ease-in-out infinite 1.3s;
+}
+
+.stat-label-huge.animate {
     animation: fadeInUp 1s ease forwards 1s;
+}
+
+.stat-subtitle.animate {
+    animation: fadeInUp 1s ease forwards 1.5s;
 }
 
 /* Step 2: About Text */
@@ -359,7 +382,7 @@ body {
     font-weight: 300;
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeInUp 1s ease forwards;
+    animation-fill-mode: forwards;
 }
 
 .about-text-detail {
@@ -368,6 +391,14 @@ body {
     line-height: 1.6;
     opacity: 0;
     transform: translateY(30px);
+    animation-fill-mode: forwards;
+}
+
+.about-text-main.animate {
+    animation: fadeInUp 1s ease forwards;
+}
+
+.about-text-detail.animate {
     animation: fadeInUp 1s ease forwards 0.5s;
 }
 
@@ -475,6 +506,28 @@ body {
 .code-block-animated .code-line:nth-child(8) { animation-delay: 1.9s; }
 
 /* Animations */
+@keyframes numberAppear {
+    from { 
+        opacity: 0; 
+        transform: scale(0.5); 
+    }
+    to { 
+        opacity: 1; 
+        transform: scale(1); 
+    }
+}
+
+@keyframes plusAppear {
+    from { 
+        opacity: 0; 
+        transform: translateY(50px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
 @keyframes pulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.05); }

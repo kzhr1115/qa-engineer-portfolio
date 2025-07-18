@@ -409,85 +409,57 @@ function initScrollStory() {
     const storySteps = scrollStory.querySelectorAll('.story-step');
     const totalSteps = storySteps.length;
     
+    // Show first step by default
+    if (storySteps.length > 0) {
+        storySteps[0].classList.add('active');
+    }
+    
     function updateStoryStep() {
         const scrollTop = window.pageYOffset;
         const storyRect = scrollStory.getBoundingClientRect();
         const storyTop = scrollTop + storyRect.top;
         const storyHeight = scrollStory.offsetHeight;
         
-        // Calculate which step should be active
-        const scrollProgress = Math.max(0, Math.min(1, 
-            (scrollTop - storyTop) / (storyHeight - window.innerHeight)
-        ));
-        
-        const currentStep = Math.floor(scrollProgress * totalSteps);
-        const stepProgress = (scrollProgress * totalSteps) % 1;
-        
-        // Update step visibility
-        storySteps.forEach((step, index) => {
-            if (index === currentStep) {
-                step.classList.add('active');
-                
-                // Add smooth transition effects based on step progress
-                if (index === 0) {
-                    // Experience number animation
-                    const experienceNumber = step.querySelector('.experience-number');
-                    if (experienceNumber) {
-                        const scale = 1 + (stepProgress * 0.2);
-                        experienceNumber.style.transform = `scale(${scale})`;
+        // If story section is in view
+        if (storyRect.top < window.innerHeight && storyRect.bottom > 0) {
+            // Calculate scroll progress within the story section
+            const scrollProgress = Math.max(0, Math.min(1, 
+                (scrollTop - storyTop) / (storyHeight - window.innerHeight)
+            ));
+            
+            // Determine current step (0-3)
+            const currentStep = Math.min(totalSteps - 1, Math.floor(scrollProgress * totalSteps));
+            
+            // Update step visibility
+            storySteps.forEach((step, index) => {
+                if (index === currentStep) {
+                    step.classList.add('active');
+                    step.style.opacity = '1';
+                    step.style.transform = 'translateY(0)';
+                } else {
+                    step.classList.remove('active');
+                    if (index < currentStep) {
+                        step.style.opacity = '0';
+                        step.style.transform = 'translateY(-100px)';
+                    } else {
+                        step.style.opacity = '0';
+                        step.style.transform = 'translateY(100px)';
                     }
-                } else if (index === 1) {
-                    // About text reveal
-                    const aboutTexts = step.querySelectorAll('.about-text-large, .about-text-normal');
-                    aboutTexts.forEach((text, textIndex) => {
-                        const delay = textIndex * 0.3;
-                        const textProgress = Math.max(0, Math.min(1, stepProgress - delay));
-                        text.style.opacity = textProgress;
-                        text.style.transform = `translateY(${(1 - textProgress) * 50}px)`;
-                    });
-                } else if (index === 2) {
-                    // Stats animation
-                    const statItems = step.querySelectorAll('.stat-item');
-                    statItems.forEach((item, statIndex) => {
-                        const delay = statIndex * 0.2;
-                        const statProgress = Math.max(0, Math.min(1, stepProgress - delay));
-                        item.style.opacity = statProgress;
-                        item.style.transform = `translateY(${(1 - statProgress) * 100}px) scale(${0.8 + statProgress * 0.2})`;
-                    });
-                } else if (index === 3) {
-                    // Code block animation
-                    const codeLines = step.querySelectorAll('.code-line');
-                    codeLines.forEach((line, lineIndex) => {
-                        const delay = lineIndex * 0.1;
-                        const lineProgress = Math.max(0, Math.min(1, stepProgress - delay));
-                        line.style.opacity = lineProgress;
-                        line.style.transform = `translateX(${(1 - lineProgress) * 30}px)`;
-                    });
                 }
-            } else if (index < currentStep) {
-                step.classList.remove('active');
-                step.style.opacity = '0';
-                step.style.transform = 'translateY(-100px)';
-            } else {
-                step.classList.remove('active');
-                step.style.opacity = '0';
-                step.style.transform = 'translateY(100px)';
-            }
-        });
+            });
+        }
     }
     
     // Smooth scroll control for story section
-    let isInStorySection = false;
-    
     function handleStoryScroll(e) {
         const storyRect = scrollStory.getBoundingClientRect();
-        isInStorySection = storyRect.top < window.innerHeight && storyRect.bottom > 0;
+        const isInStorySection = storyRect.top < window.innerHeight && storyRect.bottom > 0;
         
         if (isInStorySection) {
             e.preventDefault();
             
             // Slower scroll in story section
-            const scrollAmount = e.deltaY * 0.3;
+            const scrollAmount = e.deltaY * 0.4;
             const newScrollY = window.scrollY + scrollAmount;
             
             window.scrollTo({

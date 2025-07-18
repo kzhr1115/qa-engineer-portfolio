@@ -401,128 +401,108 @@ function initProjectsSlider() {
     projectsGrid.style.cursor = 'grab';
 }
 
-// Apple-style scroll animations
-function initScrollAnimations() {
-    const scrollSections = document.querySelectorAll('.scroll-animation');
-    const scrollElements = document.querySelectorAll('.scroll-element');
-    const scrollContents = document.querySelectorAll('.scroll-content');
+// Story-based scroll animations
+function initScrollStory() {
+    const scrollStory = document.querySelector('.scroll-story');
+    if (!scrollStory) return;
     
-    function updateScrollAnimations() {
-        scrollSections.forEach(section => {
-            const rect = section.getBoundingClientRect();
-            const sectionHeight = section.offsetHeight;
-            const viewportHeight = window.innerHeight;
-            
-            // Calculate scroll progress (0 to 1)
-            const scrollProgress = Math.max(0, Math.min(1, 
-                (viewportHeight - rect.top) / (viewportHeight + sectionHeight)
-            ));
-            
-            // Apply scroll-based transformations
-            const trigger = section.querySelector('.scroll-trigger');
-            if (trigger) {
-                const elements = trigger.querySelectorAll('.scroll-element');
-                elements.forEach((element, index) => {
-                    const delay = index * 0.1;
-                    const progress = Math.max(0, Math.min(1, scrollProgress - delay));
-                    
-                    // Parallax movement
-                    const translateY = -progress * 100;
-                    const rotateX = progress * 15;
-                    const scale = 0.8 + progress * 0.2;
-                    
-                    element.style.transform = `translateY(${translateY}px) rotateX(${rotateX}deg) scale(${scale})`;
-                    element.style.opacity = progress;
-                });
-                
-                // Background parallax
-                const bgLayer = trigger.querySelector('.parallax-bg');
-                const midLayer = trigger.querySelector('.parallax-mid');
-                
-                if (bgLayer) {
-                    const bgY = scrollProgress * 50;
-                    bgLayer.style.transform = `translateY(${bgY}px)`;
-                }
-                
-                if (midLayer) {
-                    const midY = scrollProgress * 25;
-                    midLayer.style.transform = `translateY(${midY}px)`;
-                }
-            }
-        });
+    const storySteps = scrollStory.querySelectorAll('.story-step');
+    const totalSteps = storySteps.length;
+    
+    function updateStoryStep() {
+        const scrollTop = window.pageYOffset;
+        const storyRect = scrollStory.getBoundingClientRect();
+        const storyTop = scrollTop + storyRect.top;
+        const storyHeight = scrollStory.offsetHeight;
         
-        // Scroll content visibility
-        scrollContents.forEach(content => {
-            const rect = content.getBoundingClientRect();
-            const isVisible = rect.top < window.innerHeight * 0.8 && rect.bottom > window.innerHeight * 0.2;
-            
-            if (isVisible) {
-                content.classList.add('visible');
+        // Calculate which step should be active
+        const scrollProgress = Math.max(0, Math.min(1, 
+            (scrollTop - storyTop) / (storyHeight - window.innerHeight)
+        ));
+        
+        const currentStep = Math.floor(scrollProgress * totalSteps);
+        const stepProgress = (scrollProgress * totalSteps) % 1;
+        
+        // Update step visibility
+        storySteps.forEach((step, index) => {
+            if (index === currentStep) {
+                step.classList.add('active');
+                
+                // Add smooth transition effects based on step progress
+                if (index === 0) {
+                    // Experience number animation
+                    const experienceNumber = step.querySelector('.experience-number');
+                    if (experienceNumber) {
+                        const scale = 1 + (stepProgress * 0.2);
+                        experienceNumber.style.transform = `scale(${scale})`;
+                    }
+                } else if (index === 1) {
+                    // About text reveal
+                    const aboutTexts = step.querySelectorAll('.about-text-large, .about-text-normal');
+                    aboutTexts.forEach((text, textIndex) => {
+                        const delay = textIndex * 0.3;
+                        const textProgress = Math.max(0, Math.min(1, stepProgress - delay));
+                        text.style.opacity = textProgress;
+                        text.style.transform = `translateY(${(1 - textProgress) * 50}px)`;
+                    });
+                } else if (index === 2) {
+                    // Stats animation
+                    const statItems = step.querySelectorAll('.stat-item');
+                    statItems.forEach((item, statIndex) => {
+                        const delay = statIndex * 0.2;
+                        const statProgress = Math.max(0, Math.min(1, stepProgress - delay));
+                        item.style.opacity = statProgress;
+                        item.style.transform = `translateY(${(1 - statProgress) * 100}px) scale(${0.8 + statProgress * 0.2})`;
+                    });
+                } else if (index === 3) {
+                    // Code block animation
+                    const codeLines = step.querySelectorAll('.code-line');
+                    codeLines.forEach((line, lineIndex) => {
+                        const delay = lineIndex * 0.1;
+                        const lineProgress = Math.max(0, Math.min(1, stepProgress - delay));
+                        line.style.opacity = lineProgress;
+                        line.style.transform = `translateX(${(1 - lineProgress) * 30}px)`;
+                    });
+                }
+            } else if (index < currentStep) {
+                step.classList.remove('active');
+                step.style.opacity = '0';
+                step.style.transform = 'translateY(-100px)';
+            } else {
+                step.classList.remove('active');
+                step.style.opacity = '0';
+                step.style.transform = 'translateY(100px)';
             }
         });
     }
     
-    // Smooth scroll control
-    let isScrolling = false;
-    let scrollTimeout;
+    // Smooth scroll control for story section
+    let isInStorySection = false;
     
-    function handleScrollControl() {
-        if (isScrolling) return;
+    function handleStoryScroll(e) {
+        const storyRect = scrollStory.getBoundingClientRect();
+        isInStorySection = storyRect.top < window.innerHeight && storyRect.bottom > 0;
         
-        const scrollSections = document.querySelectorAll('.scroll-animation');
-        scrollSections.forEach(section => {
-            const rect = section.getBoundingClientRect();
+        if (isInStorySection) {
+            e.preventDefault();
             
-            // If section is partially visible, control scroll speed
-            if (rect.top < window.innerHeight && rect.bottom > 0) {
-                const scrollProgress = (window.innerHeight - rect.top) / (window.innerHeight + section.offsetHeight);
-                
-                // Slow down scroll in the middle of the section
-                if (scrollProgress > 0.2 && scrollProgress < 0.8) {
-                    document.body.style.overflow = 'hidden';
-                    
-                    clearTimeout(scrollTimeout);
-                    scrollTimeout = setTimeout(() => {
-                        document.body.style.overflow = 'auto';
-                    }, 1000);
-                }
-            }
-        });
+            // Slower scroll in story section
+            const scrollAmount = e.deltaY * 0.3;
+            const newScrollY = window.scrollY + scrollAmount;
+            
+            window.scrollTo({
+                top: newScrollY,
+                behavior: 'smooth'
+            });
+        }
     }
     
-    // Wheel event for scroll control
-    window.addEventListener('wheel', (e) => {
-        const scrollSections = document.querySelectorAll('.scroll-animation');
-        let inScrollSection = false;
-        
-        scrollSections.forEach(section => {
-            const rect = section.getBoundingClientRect();
-            if (rect.top < window.innerHeight && rect.bottom > 0) {
-                inScrollSection = true;
-                
-                // Custom scroll behavior
-                e.preventDefault();
-                
-                const scrollAmount = e.deltaY * 0.5; // Slower scroll
-                const newScrollY = window.scrollY + scrollAmount;
-                
-                // Smooth scroll
-                window.scrollTo({
-                    top: newScrollY,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    }, { passive: false });
-    
-    // Update on scroll
-    window.addEventListener('scroll', () => {
-        updateScrollAnimations();
-        handleScrollControl();
-    });
+    // Event listeners
+    window.addEventListener('scroll', updateStoryStep);
+    window.addEventListener('wheel', handleStoryScroll, { passive: false });
     
     // Initial update
-    updateScrollAnimations();
+    updateStoryStep();
 }
 
 // Enhanced floating animation for stats
@@ -562,7 +542,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addHoverEffects();
     navbarScrollEffect();
     initProjectsSlider();
-    initScrollAnimations();
+    initScrollStory();
     enhanceFloatingElements();
     
     // Delay typing effect to let page load
